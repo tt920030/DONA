@@ -1,0 +1,90 @@
+body{
+    background-color: #43AAC1;
+    
+}
+
+/* -------------------news-------------------- */
+.faq{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100%;
+    color: #FFFDFD;
+}
+
+.faq h1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 55px;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url(../img/banners/banner2-3.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: #FFFDFD;
+}
+
+.faq ul{}
+
+.faq li{
+    border-top: 1px solid #FFFDFD;
+    padding-left: 67px;
+}
+
+
+
+.faq li a {
+    display: flex;
+    line-height: 110px;
+    color: #FFFDFD;
+    
+}
+
+.faq li a:hover{
+    color: #E8A7BF;
+}
+
+.faq li a:hover ::before, .faq li a:hover ::after{
+    background-color: #E8A7BF;
+}
+
+.faq li span{
+    position: relative;
+}
+
+.faq li span::before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #FFFDFD;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.faq li span::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #FFFDFD;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: rotate(90deg);
+}
+
+.faq span{
+
+}
+
+.faq h2{
+    padding-left: 30px;
+}

@@ -1,0 +1,135 @@
+body{
+    font-family: 'Noto Sans TC','Montserrat', sans-serif;
+    font-size: 16px;
+    color: #502D0A;
+    background-color: #FFFDFD;
+    letter-spacing: 3px;
+}
+
+a{
+    text-decoration: none;
+    color: #502D0A;
+    
+}
+
+a:hover{
+    color: #43AAC1;
+}
+/* -------------------header--------------------- */
+
+header{
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pink{
+    background-color: #E8A7BF;
+}
+
+.left{
+    display: flex;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.left > li:first-child{
+    position: relative;
+}
+
+.left a{
+    display: block;
+    text-decoration: none;
+    line-height: 100px;
+    
+    padding: 0 20px;
+    
+}
+
+.left > li >a:hover{
+    color: #43AAC1;
+}
+
+.left > li:first-child >a:hover{
+    border-bottom: 0;
+}
+
+.left > li:hover > ol{
+    display: flex;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 55vw;;
+    margin: auto;
+}
+
+.right{
+    display: flex; 
+    margin-right: 38px;
+    align-items: center;
+}
+
+.select{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    background-color: #FFFDFD;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 150px;
+    
+}
+
+.select li{}
+
+.select li a{
+    line-height: 50px;
+    display: block;
+    padding: 0;
+    
+}
+
+.select li a:hover{
+    
+    background-color: #ccc
+}
+
+.right li{}
+   
+
+.right li a{
+    padding: 0 20px;
+}
+
+
+.right i{
+    display: block;
+    font-size: 25px;
+}
+
+
+.white > li > a{
+    color: #FFFDFD;
+}
+
+.white > li > a:hover{
+    color: #E8A7BF;
+}
+
+.green-bg{
+    background-color: #43AAC1;
+}
+
+.pink-bg{
+    background-color: #E8A7BF;
+}

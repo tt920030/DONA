@@ -1,0 +1,114 @@
+/* ---------------------resigner--------------------- */
+.block{
+    background-color: #43AAC1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0;
+}
+
+.resigner{
+    background-color: #FFFDFD;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.resigner input{
+    margin-bottom: 40px;
+}
+
+.middle{
+    padding: 55px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.middle h1{
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 55px;
+}
+
+.middle input{
+    width: 495px;
+    height: 42px;
+    outline: none;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.log-text{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.log-text label{
+    margin-bottom: 15px;
+}
+
+
+.inline{
+    display: flex;
+    justify-content: space-between;
+}
+
+.log-text .inline #phone{
+    width: 79%;
+}
+
+.phone{
+    width: 20%;
+    height: 42px;
+    border: 0;
+    border-radius: 5px;
+    color: #502D0A;
+    cursor: pointer;
+}
+
+.phone:active, .CAPTCHA:active{
+    box-shadow:inset 3px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+#CAPTCHA{
+    width: 84%;
+}
+
+.CAPTCHA{
+    width: 15%;
+    height: 42px;
+    border: 0;
+    border-radius: 5px;
+    color: #502D0A;
+    cursor: pointer;
+}
+
+#birthday{
+    margin-bottom: 13px;
+}
+
+.resigner p{
+    color: #FF4252;
+    margin-bottom: 35px;
+}
+
+.resigner input[type="submit"]{
+    cursor: pointer;
+    background-color: #43AAC1;
+    color: #FFFDFD;
+    width: 275px;
+    height: 50px;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.resigner input[type="submit"]:hover{
+    background-color: #E8A7BF;
+    color: #502D0A;
+}

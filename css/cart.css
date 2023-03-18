@@ -1,0 +1,184 @@
+.block{
+    padding-top: 200px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #43AAC1;
+}
+
+.cart{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart h1{
+    font-size: 64px;
+    font-weight: bold;
+    color: #FFFDFD;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+table{
+    color: #FFFDFD;
+    width: 990px;
+}
+
+thead{
+    border-bottom: 1px solid #FFFDFD;
+    
+}
+
+thead tr{}
+
+thead tr th{
+    padding-bottom: 10px;
+}
+
+tbody{}
+
+tbody tr{}
+
+tbody tr td{
+    padding: 20px 0;
+    vertical-align: middle;
+}
+
+.product{
+    display: flex;
+}
+
+.product-photo{
+    margin-right: 25px;
+}
+
+.product-photo a{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    display: block;
+}
+
+.product-photo a::before{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #FFFDFD;
+    border-radius: 50%;
+}
+
+.product-photo img{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.product-name{
+    padding-top: 12px;
+}
+
+.product-name a{}
+
+.product-name a h2{
+    color: #FFFDFD;
+    margin-bottom: 10px;
+}
+
+.delete{
+    border: 1px solid #FFFDFD;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 6px 15px;
+}
+
+.delete p::before {
+    content: "";
+    background-image: url(../img/icon/delete.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    color: #FFFDFD;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.delete p{
+    color: #FFFDFD;
+    line-height: 18px;
+}
+
+#number{
+    border: 0;
+    width: 70px;
+    height: 44px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    appearance: none;
+    background-image: url(../img/input/select_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 25px;
+    color: #502D0A;
+    outline: none;
+}
+
+#number option{
+    color: #502D0A;
+    display: block;
+}
+
+.price{
+    text-align: center;
+}
+
+.number{
+    text-align: center;
+    width: 80px;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #FFFDFD;
+    padding-top: 20px;
+}
+
+.total h3{
+    color: #FFFDFD;
+}
+
+.total p{
+    color: #FFFDFD;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.block input[type="submit"]{
+    margin-top: 60px;
+    align-self: end;
+    appearance: none;
+    cursor: pointer;
+    color: #502D0A;
+    background-color: #FFFDFD;
+    border: 0;
+    width: 250px;
+    height: 55px;
+    font-size: 20px;
+}
+
+.block input[type="submit"]:hover{
+    background-color: #E8A7BF;
+}
+
+.product2{
+    transform: translateY(-80px);
+}
