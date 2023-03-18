@@ -11,7 +11,7 @@ body{
 
 .overflow{
     overflow: hidden;
-    width: calc( 100vw - 18px);
+    width: 100%;
     height: auto;
 }
 
