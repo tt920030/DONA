@@ -618,6 +618,7 @@
     display: flex;
     position: relative;
     height: calc( ( 1885px - 190px ) / 3);
+
 }
 
 .shop-img{
@@ -626,6 +627,29 @@
     left: -571px;
     bottom: 0;
     margin: auto;
+}
+
+.open{
+    content: "New Open";
+    position: absolute;
+    top: -80px;
+    right: -70px;
+    
+    background-color: #43AAC1;
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open p{
+    color: #FFFDFD;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.3;
 }
 
 
