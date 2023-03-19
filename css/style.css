@@ -156,7 +156,7 @@
 
 .text{
     color: #502D0A;
-    line-height: 40px;
+    line-height: 30px;
     width: 476px;
     text-align: justify;
 }
@@ -230,7 +230,7 @@
     color: #FFFDFD;
     width: 842px;
     margin: 60px auto 95px;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 .about a{
@@ -457,7 +457,7 @@
 .photo-text p{
     width: 500px;
     font-size: 22px;
-    line-height: 40px;
+    line-height: 30px;
     text-align: justify;
 }
 

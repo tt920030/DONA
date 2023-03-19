@@ -66,15 +66,15 @@
 }
 
 .section2-1 h1{
-    font-size: 64px;
-    line-height: 1.6;
+    font-size: 56px;
+    line-height: 1.5;
     z-index: 2;
 }
 
 .section2-1 p{
     margin-top: 60px;
     width: 895px;
-    line-height: 40px;
+    line-height: 30px;
     z-index: 2;
     text-align: justify;
 }
@@ -131,7 +131,7 @@
 .section2-2-left p{
     color: #FFFDFD;
     width: 480px;
-    line-height: 40px;
+    line-height: 30px;
     margin-right: 100px;
     z-index: 3;
     text-align: justify;
