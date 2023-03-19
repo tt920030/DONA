@@ -62,6 +62,7 @@
 
 .section2-1 img{
     margin-bottom: 108px;
+    z-index: 2;
 }
 
 .section2-1 h1{
@@ -75,6 +76,7 @@
     width: 895px;
     line-height: 40px;
     z-index: 2;
+    text-align: justify;
 }
 
 /* --------------banner2-2--------------- */
@@ -132,6 +134,7 @@
     line-height: 40px;
     margin-right: 100px;
     z-index: 3;
+    text-align: justify;
 }
 
 .section2-2-right{
@@ -253,6 +256,7 @@
 .p p{
     padding: 30px 0;
     line-height: 40px;
+    text-align: justify;
 }
 
 .section2-4-right{

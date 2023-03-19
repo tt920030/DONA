@@ -458,6 +458,7 @@
     width: 500px;
     font-size: 22px;
     line-height: 40px;
+    text-align: justify;
 }
 
 .product-sub ul{
@@ -610,7 +611,7 @@
 
 .shop-body > ul{
     margin-top: 190px;
-    margin-left: 430px;
+    margin-left: 400px;
     margin-right: 50px;
 }
 
