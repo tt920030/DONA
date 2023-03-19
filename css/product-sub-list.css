@@ -115,6 +115,14 @@ section li{
     margin-right: 15px;
 }
 
+section li:hover .bg{
+    background-color: #E8A7BF;
+}
+
+section li:hover h2,section li:hover p{
+    color: #E8A7BF;
+}
+
 section a{}
 
 .bg{
@@ -143,17 +151,4 @@ section h2{
 
 section h2 + p{
     color: #FFFDFD;
-}
-
-
-.picture2{
-    transform: translateY(-250px);
-}
-
-.picture3{
-    transform: translateY(-500px);
-}
-
-.picture4{
-    transform: translateY(-750px);
 }

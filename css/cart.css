@@ -178,7 +178,3 @@ tbody tr td{
 .block input[type="submit"]:hover{
     background-color: #E8A7BF;
 }
-
-.product2{
-    transform: translateY(-80px);
-}
