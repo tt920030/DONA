@@ -71,9 +71,17 @@
 
 .shop-text li{
     display: flex;
-    padding-bottom: 60px;
+    padding-bottom: 25px;
 }
 
+.shop-text li:first-child{
+    padding-bottom: 40px;
+}
+
+.shop-text iframe{
+    width: 350px;
+    height: 250px;
+}
 
 .shop-text h1{
     padding-top: 47px;
