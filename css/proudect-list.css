@@ -89,12 +89,19 @@ body{
 
 .container a{}
 
+.container a:hover h2,.container a:hover p{
+    color: #E8A7BF;
+}
+
+.container a:hover .bg{
+    background-color: #E8A7BF;
+}
+
 .bg{
     width: 350px;
     height: 250px;
     background-color: #FFFDFD;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 40px auto 20px;
 }
 
 .picture{
