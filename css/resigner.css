@@ -19,6 +19,10 @@
     margin-bottom: 40px;
 }
 
+.resigner input:last-child{
+    margin-bottom: 60px;
+}
+
 .middle{
     padding: 55px 150px;
     display: flex;

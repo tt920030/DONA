@@ -64,7 +64,7 @@ label[for="password"]{
 .another{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 110px;
+    margin-bottom: 60px;
 }
 
 .another h2{
