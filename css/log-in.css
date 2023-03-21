@@ -47,6 +47,8 @@ label[for="log-in"]{
     border: none;
     border-radius: 5px;
     padding: 0 10px;
+    font-family: 'Noto Sans TC';
+    color: #502D0A;
 }
 
 #log-in{
