@@ -51,6 +51,7 @@ tbody tr td{
 
 .product-photo{
     margin-right: 25px;
+    margin-left: 35px;
 }
 
 .product-photo a{
@@ -115,34 +116,33 @@ tbody tr td{
     line-height: 18px;
 }
 
-#number{
-    border: 0;
-    width: 70px;
-    height: 44px;
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: center;
-    appearance: none;
-    background-image: url(../img/input/select_arrow.svg);
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    padding-right: 25px;
-    color: #502D0A;
-    outline: none;
-}
 
-#number option{
-    color: #502D0A;
-    display: block;
-}
 
 .price{
     text-align: center;
 }
 
-.number{
-    text-align: center;
-    width: 80px;
+.number{;}
+
+.number ul{
+    display: flex;
+    justify-content: center;
+}
+
+.number li{
+    color: #FFFDFD;
+}
+
+.number i{
+    cursor: pointer;
+}
+
+.number i:hover{
+    color: #E8A7BF;
+}
+
+.num{
+    padding: 0 20px;
 }
 
 .total{
