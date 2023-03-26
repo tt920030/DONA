@@ -48,7 +48,7 @@ header{
     text-decoration: none;
     line-height: 100px;
     
-    padding: 0 20px;
+    padding: 0 10px;
     
 }
 
@@ -68,7 +68,8 @@ header{
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 55%;
+    left: 0;
+    right: 0;
     margin: auto;
 }
 

@@ -6,14 +6,14 @@
 }
 
 .banner3-1-left{
-    width: 50%;
+    width: 45%;
     background-image: url(../img/banners/banner3-1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .banner3-2-right{
-    width: 50%;
+    width: 55%;
     
     display: flex;
     justify-content: center;

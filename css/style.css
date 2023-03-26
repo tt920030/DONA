@@ -7,41 +7,45 @@
 /* -------------------banner--------------------- */
 .banner{
     display: flex;
-    height: 1000px;
-    background-color: #E8A7BF;
     height: 900px;
+    background-color: #E8A7BF;
     position: relative;
 }
 
-.left-block{
-    width: 50%;
-    background-image: url(../img/banners/banner1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.right-block{ 
+.left-block{ 
     width: 50%;
     
 }
 
 .banner-title{
     position: absolute;
-    bottom: 80px;
-    left: 55%;
+    left: 40px;
+    bottom: 300px;
+    width: 1150px;
 }
 
-.right-block h1{
+.banner-title h1{
     color: #FFFDFD;
-    font-size: 90px;
+    font-size: 100px;
     font-weight: bold;
     line-height: 1.2;
+    display: inline-block;
 }
 
-.right-block span{
-    color: #43AAC1;
+.banner-title img + h1{
+    margin-left: 10px;
 }
 
+.banner-title h1 + h1{
+    margin-left: 140px;
+}
+
+.right-block{
+    width: 50%;
+    background-image: url(../img/banners/banner1-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* -------------------section1--------------------- */
 .bg-words{
     background-image: url(../img/background/DonutsMake.png),url(../img/background/index-bg.png);
