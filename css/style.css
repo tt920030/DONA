@@ -479,6 +479,10 @@
     background-color: #E8A7BF;
 }
 
+.product-sub li:hover .product-text h3, .product-sub li:hover .product-text p{
+    color: #E8A7BF;
+}
+
 .product-text{
     display: flex;
     align-items: center;
