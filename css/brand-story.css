@@ -11,7 +11,7 @@
     background-color: #E8A7BF;
     margin-top: 100px;
     height: 450px;
-    background-image: url(../img/banners/banner2-bg.png);
+    background-image: url(../img/banners/banner2-bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
@@ -81,7 +81,7 @@
 
 /* --------------banner2-2--------------- */
 .banner2-2{
-    background-image: url(../img/banners/banner2-21.png);
+    background-image: url(../img/banners/banner2-21.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -139,7 +139,7 @@
 
 .section2-2-right{
     width: 50%;
-    background-image: url(../img/element/Leilani.png);
+    background-image: url(../img/element/Leilani.jpg);
     background-repeat: no-repeat;
     background-position: left center;
     position: relative;
@@ -173,7 +173,7 @@
 
 .bg{
     z-index: 1;
-    background-image: url(../img/banners/banner2-3.png);
+    background-image: url(../img/banners/banner2-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 90%;

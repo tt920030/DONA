@@ -207,7 +207,7 @@
 
 /* -------------------about us--------------------- */
 .about{
-    background-image: url(../img/banners/banner2.png);
+    background-image: url(../img/banners/banner2.jpg);
     height: 900px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -310,7 +310,7 @@
 /* -------------------comb--------------------- */
 
 .comb{
-    background-image: url(../img/products/comb_bg.png);
+    background-image: url(../img/products/comb_bg.jpg);
     background-repeat: no-repeat;
     background-position: 30px 0px;
     /* outline: 5px solid red; */

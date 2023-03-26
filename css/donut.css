@@ -7,7 +7,8 @@
 
 .banner3-1-left{
     width: 45%;
-    background-image: url(../img/banners/banner3-1.png);
+    background-image: url(../img/banners/banner3-1.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
