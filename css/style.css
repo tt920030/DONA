@@ -377,6 +377,7 @@
 
 .line2:hover .comb-img2, .line1:hover .comb-img1{
     border: 8px solid #43AAC1;
+    background-color: #ccc;
 }
 
 .comb-img2 {
