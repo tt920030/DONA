@@ -43,6 +43,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .block{
@@ -52,33 +53,38 @@ body{
 .detail h1{
     color: #FFFDFD;
     font-size: 34px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .detail p{
+    font-size: 24px;
     color: #FFFDFD;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
-#number{
-    appearance: none;
-    background-color: #43AAC1;
+.detail ul{
+    display: flex;
+}
+
+.detail li{
     color: #FFFDFD;
-    width: 250px;
-    height: 30px;
-    outline: none;
-    border: 0;
-    border-bottom: 1px solid #FFFDFD;
+}
+
+.detail i{
+    cursor: pointer;
+}
+
+.detail i:hover{
+    color: #E8A7BF;
+}
+
+.num{
     padding: 0 20px;
-    background-image: url(../img/input/select_arrow_white.svg);
-    background-repeat: no-repeat;
-    background-position: right 20px center;
-    font-size: 20px;
 }
 
 .detail button{
     display: block;
-    margin: 50px 0px;
+    margin: 30px 0px;
     background-color: #FFFDFD;
     color: #43AAC1;
     border: 0;
@@ -91,6 +97,49 @@ body{
     background-color: #E8A7BF;
 }
 
+.detail table{
+    color: #FFFDFD;
+    width: 250px;
+}
+
+.detail thead{
+    border-bottom: 1px solid #FFFDFD;
+}
+
+.detail thead tr{}
+
+.detail thead td{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.detail tbody tr{}
+
+.detail tbody td{
+    padding: 8px 5px;
+
+}
+
+.text-right{
+    text-align: right;
+}
+
+.detail tbody .sub{
+    padding-left: 20px;
+}
+
+.text{
+    margin: 10px 0 10px;
+    padding-left: 113px;
+}
+
+.text p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
 /* ----------------section------------------ */
 
 
@@ -99,9 +148,30 @@ section{
     padding-left: 25px;
 }
 
-section > p{
+.sub-title{
+    display: flex;
+}
+
+.sub-title p{
     color: #FFFDFD;
     margin-bottom: 40px;
+}
+
+.sub-title img{
+    display: block;
+    height: 16px;
+    margin-left: 80px;
+    cursor: pointer;
+    padding: 0 25px;
+}
+
+.sub-title p + img{
+    transform: rotate(180deg);
+    
+}
+
+.sub-title img + img{
+    margin-left: 0;
 }
 
 section ul{
