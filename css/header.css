@@ -183,6 +183,10 @@ header{
         display: inline-block;
     }
 
+    .pink-bg .bar i{
+        color: #502D0A;
+    }
+
     .right{
         margin-right: 0;
 
