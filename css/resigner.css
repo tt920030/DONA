@@ -52,7 +52,6 @@
 .log-text{
     display: flex;
     flex-direction: column;
-    align-items: left;
 }
 
 .log-text label{
@@ -117,4 +116,63 @@
 .resigner input[type="submit"]:hover{
     background-color: #E8A7BF;
     color: #502D0A;
+}
+
+/* --------------------428-------------------------- */
+
+@media screen and (max-width: 428px) {
+    .block{
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    .middle{
+        padding: 20px;
+        width: calc(100vw - 40px);
+    }
+
+    .middle h1{
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .middle input{
+        width: 100%;
+    }
+
+    .resigner input {
+        margin-bottom: 20px;
+    }
+
+    .log-text .inline #phone{
+        width: calc(100% - 105px);
+    }
+
+    .phone{
+        width: 100px;
+    }
+
+    #CAPTCHA{
+        width: calc(100% - 5px - 45px);
+    }
+
+    .CAPTCHA{
+        width: 45px;
+    }
+
+    #birthday{
+        margin-bottom: 10px;
+    }
+
+    .resigner p{
+        margin-bottom: 20px;
+    }
+
+    .resigner input:last-child{
+        margin-bottom: 40px;
+    }
+
+    .resigner input[type="submit"]{
+        margin-bottom: 10px;
+    }
 }
