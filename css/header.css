@@ -33,6 +33,20 @@ header{
     background-color: #E8A7BF;
 }
 
+.bar {
+    display: none;
+}
+
+.bar i{
+    
+    color: #FFFDFD;
+    font-size: 22px;
+}
+
+.menu-bg{
+    display: none;
+}
+
 .left{
     display: flex;
     margin-left: 30px;
@@ -133,4 +147,84 @@ header{
 
 .pink-bg{
     background-color: #E8A7BF;
+}
+
+
+/* --------------------428-------------------------- */
+
+@media screen and (max-width: 428px) {
+    header{
+        padding: 0 20px;
+        height: 52px;
+    }
+
+    .right li:first-child{
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding: 20px 30px;
+        background-color: #43AAC1;
+        
+    }
+
+    .right > li:first-child > a{
+        background-color: #FFFDFD;
+        color: #43AAC1;
+        width: 190px;
+        height: 40px;
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .bar {
+        display: inline-block;
+    }
+
+    .right{
+        margin-right: 0;
+
+    }
+
+    .right i{
+        font-size: 22px;
+    }
+
+    nav{
+        display: none;
+        border-top: 1px solid #FFFDFD;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        z-index: 6;
+        background-color: #43AAC1;
+    }
+
+    
+
+    .left{
+        padding: 20px 0;
+        flex-direction: column;
+        margin: 0 auto;
+        border-bottom: 1px solid #FFFDFD;
+    }
+
+    .left a{
+        line-height: 4;
+        width: 250px;
+    }
+    
+    .menu-bg{
+        display: none;
+        z-index: -1;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(48, 11, 2, 0.85);
+
+    }
 }

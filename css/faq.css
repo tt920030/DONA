@@ -88,3 +88,28 @@ body{
 .faq h2{
     padding-left: 30px;
 }
+
+
+@media screen and (max-width: 428px) {
+
+    .faq{
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    .faq h1{
+        padding-bottom: 40px;
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .faq li{
+        padding-left: 40px;
+    }
+
+    .faq li a{
+        line-height: 70px;
+    }
+
+    
+}

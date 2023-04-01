@@ -702,5 +702,10 @@
 
 .shop-text p{}
 
-
+@media screen and (max-width: 428px) {
+    .wrapper{
+        width: 90vw;
+    }
+    
+}
 
