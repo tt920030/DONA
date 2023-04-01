@@ -1,5 +1,5 @@
 /* ---------------------log-in--------------------- */
-.block{
+.block {
     background-color: #43AAC1;
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@
     padding: 200px 0;
 }
 
-.log-in{
+.log-in {
     background-color: #FFFDFD;
     border-radius: 10px;
     display: flex;
@@ -15,7 +15,7 @@
     flex-direction: column;
 }
 
-.middle{
+.middle {
     padding: 55px 150px;
     display: flex;
     justify-content: center;
@@ -23,23 +23,23 @@
     flex-direction: column;
 }
 
-.middle h1{
+.middle h1 {
     font-size: 38px;
     font-weight: bold;
     margin-bottom: 55px;
 }
 
-.log-text{
+.log-text {
     display: flex;
     flex-direction: column;
     align-items: left;
 }
 
-label[for="log-in"]{
+label[for="log-in"] {
     margin-bottom: 15px;
 }
 
-.middle input{
+.middle input {
     width: 495px;
     height: 42px;
     outline: none;
@@ -51,35 +51,35 @@ label[for="log-in"]{
     color: #502D0A;
 }
 
-#log-in{
+#log-in {
     margin-bottom: 40px;
 }
 
-label[for="password"]{
+label[for="password"] {
     margin-bottom: 15px;
 }
 
-#password{
+#password {
     margin-bottom: 15px;
 }
 
-.another{
+.another {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
 }
 
-.another h2{
+.another h2 {
     border-bottom: 1px solid #502D0A;
     line-height: 1.6;
 }
 
-.another h2:hover{
+.another h2:hover {
     border-bottom: 1px solid #E8A7BF;
     color: #E8A7BF;
 }
 
-.log-in input[type="submit"]{
+.log-in input[type="submit"] {
     cursor: pointer;
     background-color: #43AAC1;
     color: #FFFDFD;
@@ -88,35 +88,36 @@ label[for="password"]{
     border-radius: 0;
 }
 
-.log-in input[type="submit"]:hover{
+.log-in input[type="submit"]:hover {
     background-color: #E8A7BF;
     color: #502D0A;
 }
 
 @media screen and (max-width: 428px) {
-    .block{
+    .block {
         padding-top: 80px;
         padding-bottom: 100px;
-        
+
     }
 
-    .log-in{
-    }
-
-    .log-text{
-        width: 90%;
-    }
-
-    .middle{
+    .middle {
         padding: 20px 20px;
         width: calc(100vw - 40px);
     }
 
-    .middle input{
+    .middle h1 {
+        font-size: 26px;
+    }
+
+    .log-text {
+        width: 90%;
+    }
+
+    .middle input {
         width: 100%;
     }
 
-    .log-in input[type="submit"]{
+    .log-in input[type="submit"] {
         width: 90%;
         font-size: 16px;
     }
