@@ -200,7 +200,12 @@ footer {
         left: 0;
         z-index: 5;
         background-color: #43AAC1;
-        border-top: 1px solid #FFFDFD;
+        border-top: 1px solid #fffdfd67;
+    }
+
+    .footer-pink ol>.social{
+        background-color: #E8A7BF;
+        border-top:  1px solid #502d0a67;
     }
 
     .social a {
@@ -212,6 +217,8 @@ footer {
         content: attr(title);
         width: 100px;
         padding-left: 20px;
+        line-height: 37px;
+        vertical-align: bottom;
     }
 
 }
