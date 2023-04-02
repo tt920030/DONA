@@ -106,8 +106,8 @@ label[for="password"] {
     }
 
     .middle {
-        padding: 20px;
-        width: calc(100vw - 40px);
+        padding: 20px 0;
+        width: 90vw;
     }
 
     .middle h1 {
@@ -116,7 +116,7 @@ label[for="password"] {
     }
 
     .log-text {
-        width: 90%;
+        width: 75vw;
     }
 
     .middle input {
@@ -136,7 +136,7 @@ label[for="password"] {
     }
 
     .log-in input[type="submit"] {
-        width: 90%;
+        width: 75vw;
         font-size: 16px;
         margin-bottom: 10px;
     }

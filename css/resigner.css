@@ -75,6 +75,7 @@ body{
     border-radius: 5px;
     color: #502D0A;
     cursor: pointer;
+    background-color: #F2F2F2;
 }
 
 .phone:active, .CAPTCHA:active{
@@ -92,10 +93,12 @@ body{
     border-radius: 5px;
     color: #502D0A;
     cursor: pointer;
+    background-color: #F2F2F2;
 }
 
 #birthday{
     margin-bottom: 13px;
+
 }
 
 .resigner p{
@@ -129,7 +132,7 @@ body{
     }
 
     .middle{
-        padding: 20px;
+        padding: 20px 0;
         width: calc(100vw - 40px);
     }
 
@@ -140,6 +143,10 @@ body{
 
     .middle input{
         width: 100%;
+    }
+
+    .log-text{
+        width: 75vw;
     }
 
     .resigner input {
@@ -164,16 +171,18 @@ body{
 
     #birthday{
         margin-bottom: 10px;
+        width: 75vw;
     }
 
     .resigner p{
         margin-bottom: 20px;
+        font-size: 14px;
     }
 
     .resigner input[type="submit"]{
         margin-bottom: 10px;
         margin-top: 30px;
-        width: 100%;
+        width: 75vw;
     }
 
     
