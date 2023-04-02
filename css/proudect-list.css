@@ -99,6 +99,7 @@ body{
 }
 
 .bg{
+    border-radius: 5px;
     width: 350px;
     height: 250px;
     background-color: #FFFDFD;

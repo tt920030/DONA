@@ -191,6 +191,7 @@ tbody tr td{
 
     .cart h1{
         font-size: 30px;
+        margin-bottom: 50px;
     }
 
     table{
@@ -251,6 +252,7 @@ tbody tr td{
         width:  calc(100vw - 40px);
         align-self: center;
         font-size: 16px;
+        border-radius: 5px;
     }
 
 
