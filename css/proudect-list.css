@@ -3,6 +3,7 @@ body{
 }
 
 .bg-words{
+    background-color: #43AAC1;
     background-image: url(../img/background/Donutworry_pink.png),
                       url(../img/background/product-bg.png),
                       url(../img/background/Donutworry_pink.png);

@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 /* -------------------banner--------------------- */
+body{
+    background-color: #E8A7BF;
+}
+
 .banner{
     display: flex;
     height: 900px;
@@ -48,6 +52,7 @@
 }
 /* -------------------section1--------------------- */
 .bg-words{
+    background-color: #FFFDFD;
     background-image: url(../img/background/DonutsMake.png),url(../img/background/index-bg.png);
     background-repeat: no-repeat, no-repeat;
     background-position: left top 400px, top 1530px center;
@@ -255,6 +260,7 @@
 
 /* -------------------info--------------------- */
 .info{
+    background-color: #FFFDFD;
     height: 100px;
     overflow: hidden;
     border-bottom: 1px solid #502D0A;
@@ -309,7 +315,12 @@
 
 /* -------------------comb--------------------- */
 
+.bg-white{
+    background-color: #FFFDFD;
+}
+
 .comb{
+    background-color: #FFFDFD;
     background-image: url(../img/products/comb_bg.jpg);
     background-repeat: no-repeat;
     background-position: 30px 0px;
@@ -555,6 +566,7 @@
 
 /* -------------------news-------------------- */
 .news{
+    background-color: #FFFDFD;
     height: 600px;
 }
 
@@ -619,6 +631,7 @@
 }
 
 .shop-body{
+    background-color: #FFFDFD;
     width: 65%;
 }
 
