@@ -82,7 +82,7 @@ tbody tr td{
 }
 
 .product-name{
-    padding-top: 12px;
+    padding-top: 16px;
 }
 
 .product-name a{}
@@ -95,21 +95,18 @@ tbody tr td{
 .delete{
     border: 1px solid #FFFDFD;
     border-radius: 20px;
-    display: inline-block;
+    display: inline-flex;
     padding: 6px 15px;
+    justify-content: center;
+    align-items: baseline;
 }
 
-.delete p::before {
-    content: "";
-    background-image: url(../img/icon/delete.svg);
-    background-repeat: no-repeat;
-    background-position: center bottom;
+.delete i {
     color: #FFFDFD;
-    width: 18px;
-    height: 18px;
-    display: inline-block;
+    font-size: 16px;
     margin-right: 7px;
 }
+
 
 .delete p{
     color: #FFFDFD;
@@ -177,4 +174,74 @@ tbody tr td{
 
 .block input[type="submit"]:hover{
     background-color: #E8A7BF;
+}
+
+
+/* --------------------428-------------------------- */
+
+@media screen and (max-width: 428px) {
+    .block{
+        padding-top: 100px;
+    }
+
+    .cart h1{
+        font-size: 30px;
+    }
+
+    table{
+        width: calc(100vw - 40px);
+    }
+
+    tbody tr td{
+        padding: 10px 0;
+    }
+
+    .product{
+        justify-content: space-around;
+    }
+
+    .product-photo{
+        margin-right: 10px;
+        margin-left: 0;
+    }
+
+    .product-photo a{
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .product-photo a::before{
+        width: 40px;
+        height: 40px;
+    }
+
+    .delete{
+        padding: 3px 10px;
+    }
+
+    .delete p{
+        font-size: 12px;
+    }
+
+    .delete p::before{
+        margin-right: 2px;
+        font-size: 12px;
+    }
+
+    .price{
+        padding: 0 10px;
+        flex-grow: 1;
+    }
+
+    .num{
+        padding: 0 10px;
+    }
+
+    .block input[type="submit"]{
+        width:  calc(100vw - 40px);
+        align-self: center;
+    }
+
+
 }
