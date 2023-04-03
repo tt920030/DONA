@@ -1,6 +1,17 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
 body{
     background-color: #E8A7BF;
     
+}
+
+.wrapper{
+    /* outline: 5px solid red; */
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 /* -------------------news-------------------- */
@@ -32,9 +43,28 @@ body{
     padding-left: 67px;
 }
 
+.news li:last-child{
+    border-bottom: 1px solid #502D0A;
+}
+
+.news li a{
+    display: flex;
+    line-height: 110px;
+}
+
+.news p{
+    width: 100px;
+    margin-right: 65px;
+}
+
+
 /* --------------------428-------------------------- */
 
 @media screen and (max-width: 428px){
+    .wrapper{
+        width: 90vw;
+    }
+    
     .news{
         padding-top: 52px;
         padding-bottom: 100px;

@@ -1,6 +1,17 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
 body{
     background-color: #43AAC1;
     
+}
+
+.wrapper{
+    /* outline: 5px solid red; */
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 /* -------------------news-------------------- */
@@ -91,7 +102,10 @@ body{
 
 
 @media screen and (max-width: 428px) {
-
+    .wrapper{
+        width: 90vw;
+    }
+    
     .faq{
         padding-top: 52px;
         padding-bottom: 100px;

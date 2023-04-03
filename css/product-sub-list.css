@@ -1,5 +1,16 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
 body{
     background-color: #43AAC1;
+}
+
+.wrapper{
+    /* outline: 5px solid red; */
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 /* ---------------------main---------------------- */
@@ -89,9 +100,10 @@ body{
     background-color: #FFFDFD;
     color: #43AAC1;
     border: 0;
-    width: 250px;
+    width: 274px;
     height: 50px;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .detail button:hover{
@@ -101,7 +113,7 @@ body{
 
 .detail table{
     color: #FFFDFD;
-    width: 250px;
+    width: 274px;
 }
 
 .detail thead{
@@ -118,7 +130,7 @@ body{
 .detail tbody tr{}
 
 .detail tbody td{
-    padding: 8px 5px;
+    padding: 8px 15px;
 
 }
 
@@ -127,12 +139,12 @@ body{
 }
 
 .detail tbody .sub{
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 .text{
     margin: 10px 0 10px;
-    padding-left: 113px;
+    padding-left: 165px;
 }
 
 .text p{
@@ -234,6 +246,10 @@ section h2 + p{
 /* --------------------428-------------------------- */
 
 @media screen and (max-width: 428px){
+    .wrapper{
+        width: 90vw;
+    }
+    
     .picture{
         width: 100%;
     }
@@ -255,7 +271,6 @@ section h2 + p{
     .detail{
         width: 100%;
         margin-top: 30px;
-        align-items: flex-start;
         padding: 0 20px;
     }
 
@@ -268,8 +283,9 @@ section h2 + p{
     }
 
     .detail button{
-        width: calc(90vw - 40px);
+        width: 75vw;
         font-size: 16px;
+        margin: 30px auto;
     }
 
     .detail table{

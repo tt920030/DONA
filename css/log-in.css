@@ -1,4 +1,8 @@
-body{
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
+body {
     background-color: #43AAC1;
 }
 
@@ -91,6 +95,7 @@ label[for="password"] {
     height: 50px;
     border-radius: 0;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .log-in input[type="submit"]:hover {
@@ -123,21 +128,20 @@ label[for="password"] {
         width: 100%;
     }
 
-    #log-in{
+    #log-in {
         margin-bottom: 20px;
     }
 
-    #password{
+    #password {
         margin-bottom: 5px;
     }
 
-    .another{
+    .another {
         margin-bottom: 40px;
     }
 
     .log-in input[type="submit"] {
         width: 75vw;
-        font-size: 16px;
         margin-bottom: 10px;
     }
 
