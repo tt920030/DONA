@@ -102,6 +102,10 @@ section{
 /* --------------------428-------------------------- */
 
 @media screen and (max-width: 428px){
+    header{
+        background-color: #43AAC1;
+    }
+
     section{
         background-image: none;
         height: 650px;

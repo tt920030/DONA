@@ -193,16 +193,18 @@ footer {
     }
 
     .footer-right ol>.social {
-        display: none;
+        /* display: none; */
+        transition: all .5s;
         width: 250px;
-        height: calc(100vh - 440px);
+        height: calc(100vh - 80px - 320px - 52px);
         flex-direction: column;
         position: fixed;
-        top: 440px;
-        left: 0;
+        top: 452px;
+        left: -250px;
         z-index: 5;
         background-color: #43AAC1;
         border-top: 1px solid #fffdfd67;
+        opacity: 0;
     }
 
     .footer-pink ol>.social{
@@ -211,7 +213,7 @@ footer {
     }
 
     .social a {
-        margin-top: 25px;
+        margin-top: 20px;
     }
 
     .social a::after {
@@ -222,5 +224,7 @@ footer {
         line-height: 37px;
         vertical-align: bottom;
     }
+
+
 
 }

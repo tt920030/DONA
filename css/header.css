@@ -47,7 +47,7 @@ header{
     font-size: 22px;
 }
 
-.menu-bg{
+.js-bg{
     display: none;
 }
 
@@ -163,12 +163,15 @@ header{
     }
 
     .right li:first-child{
-        display: none;
+        /* display: none; */
+        transition: all .5s;
         position: fixed;
-        left: 0;
-        top: 0;
+        left: -250px;
+        top: 52px;
         padding: 20px 30px;
         background-color: #43AAC1;
+        opacity: 0;
+        z-index: 999;
     }
 
     .pink-bg .right li:first-child{
@@ -224,13 +227,15 @@ header{
     }
 
     nav{
-        display: none;
+        /* display: none; */
+        transition: all .5s;
         border-top: 1px solid #fffdfd67;
         position: fixed;
-        left: 0;
-        top: 80px;
+        left: -250px;
+        top: 132px;
         z-index: 6;
         background-color: #43AAC1;
+        opacity: 0;
     }
 
     .pink-bg nav{
@@ -239,7 +244,7 @@ header{
         color: #502D0A;
     }
 
-    .pink nav{
+    .pink nav, .pink .right{ 
         background-color: #E8A7BF;
         border-top:  1px solid #502d0a67;
     }
@@ -260,7 +265,7 @@ header{
     }
 
     .left > li > a{
-        line-height: 4;
+        line-height: 3.5;
         width: 250px;
         color: #FFFDFD;
     }
@@ -268,15 +273,21 @@ header{
     .pink-bg .left > li > a, .pink .left > li > a{
         color: #502D0A;
     }
-    
+
     .menu-bg{
         z-index: -1;
         position: fixed;
         left: 0;
-        top: 0;
+        top: 52px;
         width: 100%;
         height: 100%;
-        background-color: rgba(48, 11, 2, 0.85);
+        background-color: rgba(32, 32, 32, 0.817);
+        transition: all .5s;
+        opacity: 0;
+    }
 
+    .right li:first-child.js-open, nav.js-open, .footer-right ol > .social.js-open, .menu-bg.js-open{
+        opacity: 1;
+        left: 0px;
     }
 }
