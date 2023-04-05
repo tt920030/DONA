@@ -2,6 +2,11 @@
 @import url(header.css);
 @import url(footer.css);
 
+
+
+
+
+
 /* -------------------banner--------------------- */
 body{
     background-color: #E8A7BF;
@@ -315,13 +320,14 @@ body{
 
 .bg-white{
     background-color: #FFFDFD;
+    
 }
 
 .comb{
     background-color: #FFFDFD;
     background-image: url(../img/products/comb_bg.jpg);
     background-repeat: no-repeat;
-    background-position: 30px 0px;
+    background-position: 0px 0px;
     /* outline: 5px solid red; */
     margin: 0 auto;
     width: 1200px;
@@ -439,6 +445,7 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .tape{
@@ -448,16 +455,22 @@ body{
 }
 
 .big-picture{
+    margin-left: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48%;
+    width: 459px;
+    height: 510px;
+    overflow: hidden;
 }
 
-.big-picture img{}
+.big-picture img{
+    width: 100%;
+}
 
 .photo-text{
-    width: 50%;
+    margin: 50px;
+    flex-basis: 536px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -535,14 +548,6 @@ body{
     width: 100%;
     position: relative;
     z-index: 1;
-}
-
-.list-1 img{
-    transform: translateY(-200px);
-}
-
-.list-2 img{
-    transform: translateY(-400px);
 }
 
 .product-sub a{
@@ -718,6 +723,20 @@ body{
 /* --------------------428px------------------------- */
 
 @media screen and (max-width: 428px) {
+    .index-pink .left{
+        background-color: #E8A7BF;
+        color: #502D0A;
+        border-top: 1px solid #502d0a67;
+    }
+
+    header .right .index-pink{
+        background-color: #E8A7BF;
+    }
+
+    header .right .index-pink a{
+        color: #502D0A;
+    }
+
     .wrapper{
         width: 90vw;
     }

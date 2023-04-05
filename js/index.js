@@ -1,17 +1,41 @@
 $(function(){
     $(".bar").click(function(){
-        $(".right li:first").toggleClass("js-open");
-        $("nav").toggleClass("js-open");
-        $(".footer-right ol > .social").toggleClass("js-open");
-        $(".js-bg").css({display: "block"});
-        $(".menu-bg").toggleClass("js-open");
+        $("header").toggleClass("pink");
     });
 
     $(".menu-bg").click(function(){
-        $(".right li:first").removeClass("js-open");
-        $("nav").removeClass("js-open");
-        $(".footer-right ol > .social").removeClass("js-open");
-        $(".js-bg").css({display: "none"});
-        $(".menu-bg").removeClass("js-open");
+        $("header").toggleClass("pink");
     });
+
+    $(".line1").hover(
+        function(){
+            $(".comb").animate({backgroundPosition: "0px"});
+        },
+        function(){
+            // $(".comb").animate({backgroundPosition: "0px"});
+        }
+    );
+
+    $(".line2").hover(
+        function(){
+            $(".comb").animate({backgroundPosition: "-1200px"});
+        },
+        function(){
+            // $(".comb").animate({backgroundPosition: "0px"});
+        }
+    );
+
+    $(".product-sub li").hover(
+        
+        function(){
+            let change_pic = $(this).find(".list img").attr("src");
+            let change_title = $(this).find(".product-text h3").text();
+            $(".big-picture img").attr("src",change_pic);
+            $(".photo-text h2").text(change_title);
+        },
+        function(){
+            $(".big-picture img").attr("src","img/element/choco.jpg");
+            $(".photo-text h2").text("巧克碎片甜甜圈");
+        }
+    );
 });

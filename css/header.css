@@ -209,10 +209,6 @@ header{
         color: #502D0A;
     }
 
-    .bar-pink i{
-        color: #502D0A;
-    }
-
     .pink .bar i{
         color: #502D0A;
     }
@@ -251,11 +247,11 @@ header{
 
     .select{
         width: 250px;
-        top: 64px;
+        top: 56px;
     }
 
     .select li a{
-        line-height: 4;
+        line-height: 3.5;
     }
 
     .left{
@@ -290,4 +286,5 @@ header{
         opacity: 1;
         left: 0px;
     }
+
 }
