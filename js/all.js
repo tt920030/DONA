@@ -1,36 +1,44 @@
-$(function(){
+$(function () {
+    (function () {
+        if ($(this).width() < 428) {
+            $(".shop-img img").attr("src", "../img/shop/shop-small.jpg");
+        }
+    })();
+
+
+
     let is_open = false;
 
-    $(".left > li > a:first").click(function(e){
+    $(".left > li > a:first").click(function (e) {
         e.preventDefault();
 
-        if(is_open === false){
+        if (is_open === false) {
             $(".select").slideDown();
-            $(".left > li:first-child").animate({height: "168px"}, 500);
-            $(".footer-right ol>.social").animate({top: "564px"}, 500);
+            $(".left > li:first-child").addClass('-open');
+            $(".footer-right ol>.social").addClass('-open');
             is_open = true;
-        }else{
+        } else {
             $(".select").slideUp();
-            $(".left > li:first-child").animate({height: "56px"}, 500);
-            $(".footer-right ol>.social").animate({top: "452px"}, 500);
+            $(".left > li:first-child").removeClass('-open');
+            $(".footer-right ol>.social").removeClass('-open');
             is_open = false;
         }
-        
+
     });
 
-    $(".bar").click(function(){
+    $(".bar").click(function () {
         $(".right li:first").toggleClass("js-open");
         $("nav").toggleClass("js-open");
         $(".footer-right ol > .social").toggleClass("js-open");
-        $(".js-bg").css({display: "block"});
+        $(".js-bg").css({ display: "block" });
         $(".menu-bg").toggleClass("js-open");
     });
 
-    $(".menu-bg").click(function(){
+    $(".menu-bg").click(function () {
         $(".right li:first").removeClass("js-open");
         $("nav").removeClass("js-open");
         $(".footer-right ol > .social").removeClass("js-open");
-        $(".js-bg").css({display: "none"});
+        $(".js-bg").css({ display: "none" });
         $(".menu-bg").removeClass("js-open");
     });
 

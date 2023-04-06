@@ -1,27 +1,28 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Noto Sans TC','Montserrat', sans-serif;
+body {
+    font-family: 'Noto Sans TC', 'Montserrat', sans-serif;
     font-size: 16px;
     color: #502D0A;
     background-color: #FFFDFD;
     letter-spacing: 3px;
 }
 
-a{
+a {
     text-decoration: none;
     color: #502D0A;
-    
+
 }
 
-a:hover{
+a:hover {
     color: #43AAC1;
 }
+
 /* -------------------header--------------------- */
 
-header{
+header {
     z-index: 4;
     position: fixed;
     left: 0;
@@ -33,56 +34,62 @@ header{
     justify-content: space-between;
 }
 
-.pink{
-    background-color: #E8A7BF;
+.pink {
+    background-color: rgba(232, 167, 191, 1);
+    opacity: 1;
 }
 
 .bar {
     display: none;
 }
 
-.bar i{
-    
+.bar i {
     color: #FFFDFD;
     font-size: 22px;
 }
 
-.js-bg{
+.js-bg {
     display: none;
 }
 
-.left{
+.left {
     display: flex;
     margin-left: 30px;
     text-align: center;
 }
 
-.left > li:first-child{
+.left>li:first-child {
     position: relative;
 }
 
-.left a{
+.left a {
     display: block;
     text-decoration: none;
     line-height: 100px;
-    
+
     padding: 0 10px;
-    
+
 }
 
-.left > li >a:hover{
+.left>li>a:hover {
     color: #43AAC1;
 }
 
-.left > li:first-child >a:hover{
+.left>li:first-child>a:hover {
     border-bottom: 0;
 }
 
-.left > li:hover > ol{
+/* .left > li:hover > ol{
     display: flex;
+} */
+
+@media screen and (min-width: 1200px) {
+    .left>li:hover>ol {
+        display: flex;
+    }
 }
 
-.logo{
+.logo {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -91,13 +98,13 @@ header{
     margin: auto;
 }
 
-.right{
-    display: flex; 
+.right {
+    display: flex;
     margin-right: 38px;
     align-items: center;
 }
 
-.select{
+.select {
     display: none;
     /* display: flex; */
     flex-direction: column;
@@ -106,50 +113,50 @@ header{
     top: 80px;
     left: 0;
     width: 150px;
-    
+
 }
 
-.select li{}
+.select li {}
 
-.select li a{
+.select li a {
     line-height: 50px;
     display: block;
     padding: 0;
-    
+
 }
 
-.select li a:hover{
-    
+.select li a:hover {
+
     background-color: #ccc
 }
 
-.right li{}
-   
+.right li {}
 
-.right li a{
+
+.right li a {
     padding: 0 20px;
 }
 
 
-.right i{
+.right i {
     display: block;
     font-size: 25px;
 }
 
 
-.white > li > a{
+.white>li>a {
     color: #FFFDFD;
 }
 
-.white > li > a:hover{
+.white>li>a:hover {
     color: #E8A7BF;
 }
 
-.green-bg{
+.green-bg {
     background-color: #43AAC1;
 }
 
-.pink-bg{
+.pink-bg {
     background-color: #E8A7BF;
 }
 
@@ -157,12 +164,12 @@ header{
 /* --------------------428-------------------------- */
 
 @media screen and (max-width: 428px) {
-    header{
+    header {
         padding: 0 20px;
         height: 52px;
     }
 
-    .right li:first-child{
+    .right li:first-child {
         /* display: none; */
         transition: all .5s;
         position: fixed;
@@ -174,15 +181,15 @@ header{
         z-index: 999;
     }
 
-    .pink-bg .right li:first-child{
+    .pink-bg .right li:first-child {
         background-color: #E8A7BF;
     }
 
-    .pink .right li:first-child{
+    .pink .right li:first-child {
         background-color: #E8A7BF;
     }
 
-    .right > li:first-child > a{
+    .right>li:first-child>a {
         background-color: #FFFDFD;
         color: #43AAC1;
         width: 190px;
@@ -193,11 +200,11 @@ header{
         border-radius: 5px;
     }
 
-    .pink-bg .right > li:first-child > a{
+    .pink-bg .right>li:first-child>a {
         color: #502D0A;
     }
 
-    .pink .right > li:first-child > a{
+    .pink .right>li:first-child>a {
         color: #502D0A;
     }
 
@@ -205,24 +212,24 @@ header{
         display: inline-block;
     }
 
-    .bar-pink i{
+    .bar-pink i {
         color: #502D0A;
     }
 
-    .pink .bar i{
+    .pink .bar i {
         color: #502D0A;
     }
 
-    .right{
+    .right {
         margin-right: 0;
 
     }
 
-    .right i{
+    .right i {
         font-size: 22px;
     }
 
-    nav{
+    nav {
         /* display: none; */
         transition: all .5s;
         border-top: 1px solid #fffdfd67;
@@ -234,43 +241,48 @@ header{
         opacity: 0;
     }
 
-    .pink-bg nav{
+    .pink-bg nav {
         background-color: #E8A7BF;
-        border-top:  1px solid #502d0a67;
+        border-top: 1px solid #502d0a67;
         color: #502D0A;
     }
 
-    .pink nav, .pink .right{ 
+    .pink nav {
         background-color: #E8A7BF;
-        border-top:  1px solid #502d0a67;
+        border-top: 1px solid #502d0a67;
     }
 
-    .select{
+    .pink .right>li:first-child {
+        background-color: #E8A7BF;
+    }
+
+    .select {
         width: 250px;
         top: 56px;
     }
 
-    .select li a{
+    .select li a {
         line-height: 3.5;
     }
 
-    .left{
+    .left {
         padding: 20px 0;
         flex-direction: column;
         margin: 0 auto;
     }
 
-    .left > li > a{
+    .left>li>a {
         line-height: 3.5;
         width: 250px;
         color: #FFFDFD;
     }
 
-    .pink-bg .left > li > a, .pink .left > li > a{
+    .pink-bg .left>li>a,
+    .pink .left>li>a {
         color: #502D0A;
     }
 
-    .menu-bg{
+    .menu-bg {
         z-index: -1;
         position: fixed;
         left: 0;
@@ -282,7 +294,10 @@ header{
         opacity: 0;
     }
 
-    .right li:first-child.js-open, nav.js-open, .footer-right ol > .social.js-open, .menu-bg.js-open{
+    .right li:first-child.js-open,
+    nav.js-open,
+    .footer-right ol>.social.js-open,
+    .menu-bg.js-open {
         opacity: 1;
         left: 0px;
     }
