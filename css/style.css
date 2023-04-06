@@ -270,40 +270,51 @@ header{
 .info{
     background-color: #FFFDFD;
     height: 100px;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-bottom: 1px solid #502D0A;
     position: relative;
 }
 
 .info a{
-    position: absolute;
-    left: -85%;
-    top: 0;
+    /* position: absolute;
+    left: 0;
+    top: 0; */
     display: block;
     line-height: 100px;
-    display: flex;
-    align-items: center;
-    animation: info 16s linear infinite;
+    
+    
 }
+
+.info1{
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    
+    /* transform: translate(100%); */
+    animation: info 13s linear infinite;
+}
+
+/* .info2{
+    animation: info2 10s linear infinite;
+} */
 
 @keyframes info{
     0%{
-        left: -50%;
+        transform: translate(0%);
     }
     100%{
-        left: 0;
+        transform: translate(-50%);
     }
 }
 
-/* @keyframes info {
-    0% {
-        transform: translateZ(0)
+@keyframes info2 {
+    0%{
+        transform: translate(0%);
     }
-
-    to {
-        transform: translate3d(-50%,0,0)
+    100%{
+        transform: translate(-200%);
     }
-} */
+}
 .info a:hover i, .info a:hover h1{
     color: #E8A7BF;
 }
@@ -313,9 +324,11 @@ header{
     color: #502D0A;
     font-size: 30px;
     width: 50px;
+    flex-shrink: 0;
 }
 
 .info h1{
+    display: block;
     font-size: 24px;
     flex-shrink: 0;
     width: 490px;
