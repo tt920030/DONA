@@ -2,11 +2,11 @@
 @import url(header.css);
 @import url(footer.css);
 
-body{
+body {
     background-color: #43AAC1;
 }
 
-.block{
+.block {
     padding-top: 200px;
     padding-bottom: 100px;
     display: flex;
@@ -15,12 +15,12 @@ body{
     background-color: #43AAC1;
 }
 
-.cart{
+.cart {
     display: flex;
     flex-direction: column;
 }
 
-.cart h1{
+.cart h1 {
     font-size: 64px;
     font-weight: bold;
     color: #FFFDFD;
@@ -28,41 +28,41 @@ body{
     margin-bottom: 80px;
 }
 
-table{
+table {
     color: #FFFDFD;
     width: 750px;
 }
 
-thead{
+thead {
     border-bottom: 1px solid #FFFDFD;
-    
+
 }
 
-thead tr{}
+thead tr {}
 
-thead tr th{
+thead tr th {
     padding-bottom: 10px;
 }
 
-tbody{}
+tbody {}
 
-tbody tr{}
+tbody tr {}
 
-tbody tr td{
+tbody tr td {
     padding: 20px 0;
     vertical-align: middle;
 }
 
-.product{
+.product {
     display: flex;
 }
 
-.product-photo{
+.product-photo {
     margin-right: 25px;
     margin-left: 35px;
 }
 
-.product-photo a{
+.product-photo a {
     position: relative;
     width: 80px;
     height: 80px;
@@ -70,7 +70,7 @@ tbody tr td{
     display: block;
 }
 
-.product-photo a::before{
+.product-photo a::before {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -83,24 +83,24 @@ tbody tr td{
     border-radius: 50%;
 }
 
-.product-photo img{
+.product-photo img {
     position: relative;
     z-index: 1;
     width: 100%;
 }
 
-.product-name{
+.product-name {
     padding-top: 16px;
 }
 
-.product-name a{}
+.product-name a {}
 
-.product-name a h2{
+.product-name a h2 {
     color: #FFFDFD;
     margin-bottom: 10px;
 }
 
-.delete{
+.delete {
     border: 1px solid #FFFDFD;
     border-radius: 20px;
     display: inline-flex;
@@ -116,58 +116,62 @@ tbody tr td{
 }
 
 
-.delete p{
+.delete p {
     color: #FFFDFD;
     line-height: 18px;
 }
 
 
 
-.price{
+.price {
     text-align: center;
 }
 
-.number{;}
+.number {
+    ;
+}
 
-.number ul{
+.number ul {
     display: flex;
     justify-content: center;
 }
 
-.number li{
+.number li {
     color: #FFFDFD;
 }
 
-.number i{
+.number i {
     cursor: pointer;
 }
 
-.number i:hover{
-    color: #E8A7BF;
+@media screen and (min-width: 1200px) {
+    .number i:hover {
+        color: #E8A7BF;
+    }
 }
 
-.num{
+.num {
     padding: 0 20px;
 }
 
-.total{
+.total {
     display: flex;
     justify-content: flex-end;
     border-top: 1px solid #FFFDFD;
     padding-top: 20px;
 }
 
-.total h3{
+.total h3 {
     color: #FFFDFD;
 }
 
-.total p{
+.total p {
     color: #FFFDFD;
     margin-left: 40px;
     margin-right: 10px;
 }
 
-.block input[type="submit"]{
+.block input[type="submit"] {
     margin-top: 60px;
     align-self: end;
     appearance: none;
@@ -182,79 +186,80 @@ tbody tr td{
     border-radius: 5px;
 }
 
-.block input[type="submit"]:hover{
-    background-color: #E8A7BF;
+@media screen and (min-width: 1200px) {
+    .block input[type="submit"]:hover {
+        background-color: #E8A7BF;
+    }
 }
-
 
 /* --------------------428-------------------------- */
 
 @media screen and (max-width: 428px) {
-    .block{
+    .block {
         padding-top: 100px;
     }
 
-    .cart h1{
+    .cart h1 {
         font-size: 30px;
         margin-bottom: 50px;
     }
 
-    table{
+    table {
         width: calc(100vw - 40px);
     }
 
-    tbody tr td{
+    tbody tr td {
         padding: 10px 0;
     }
 
-    .product{
+    .product {
         justify-content: space-evenly;
     }
 
-    .product-photo{
+    .product-photo {
         margin-right: 10px;
         margin-left: 0;
     }
 
-    .product-photo a{
+    .product-photo a {
         width: 60px;
         height: 60px;
         margin-top: 10px;
     }
 
-    .product-name a h2{
+    .product-name a h2 {
         margin-right: 10px;
     }
 
-    .product-photo a::before{
+    .product-photo a::before {
         width: 40px;
         height: 40px;
     }
 
-    .delete{
+    .delete {
         padding: 3px 10px;
     }
 
-    .delete p{
+    .delete p {
         font-size: 12px;
     }
 
-    .delete p::before{
+    .delete p::before {
         margin-right: 2px;
         font-size: 12px;
     }
 
-    .price{
+    .price {
         padding: 0 10px;
         flex-grow: 1;
     }
 
-    .num{
+    .num {
         padding: 0 10px;
     }
 
-    .block input[type="submit"]{
-        width:  75vw;
+    .block input[type="submit"] {
+        width: 75vw;
         align-self: center;
         font-size: 16px;
 

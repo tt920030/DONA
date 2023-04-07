@@ -12,8 +12,10 @@ footer {
     color: #FFFDFD;
 }
 
-.green a:hover {
-    color: #E8A7BF;
+@media screen and (min-width: 1200px) {
+    .green a:hover {
+        color: #E8A7BF;
+    }
 }
 
 .footer-left {
@@ -167,7 +169,7 @@ footer {
 
     }
 
-    .footer-left li{
+    .footer-left li {
         position: relative;
     }
 
@@ -175,7 +177,7 @@ footer {
         display: none;
     }
 
-    .email input[type="text"]{
+    .email input[type="text"] {
         width: calc(100vw - 20px - 40px);
         background-size: 22px;
         font-size: 20px;
@@ -207,9 +209,9 @@ footer {
         opacity: 0;
     }
 
-    .footer-pink ol>.social{
+    .footer-pink ol>.social {
         background-color: #E8A7BF;
-        border-top:  1px solid #502d0a67;
+        border-top: 1px solid #502d0a67;
     }
 
     .social a {

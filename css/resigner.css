@@ -2,12 +2,12 @@
 @import url(header.css);
 @import url(footer.css);
 
-body{
+body {
     background-color: #43AAC1;
 }
 
 /* ---------------------resigner--------------------- */
-.block{
+.block {
     background-color: #43AAC1;
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@ body{
     padding: 200px 0;
 }
 
-.resigner{
+.resigner {
     background-color: #FFFDFD;
     border-radius: 10px;
     display: flex;
@@ -23,11 +23,11 @@ body{
     flex-direction: column;
 }
 
-.resigner input{
+.resigner input {
     margin-bottom: 40px;
 }
 
-.middle{
+.middle {
     padding: 55px 150px;
     display: flex;
     justify-content: center;
@@ -35,13 +35,13 @@ body{
     flex-direction: column;
 }
 
-.middle h1{
+.middle h1 {
     font-size: 38px;
     font-weight: bold;
     margin-bottom: 55px;
 }
 
-.middle input{
+.middle input {
     width: 495px;
     height: 42px;
     outline: none;
@@ -53,26 +53,26 @@ body{
     color: #502D0A;
 }
 
-.log-text{
+.log-text {
     display: flex;
     flex-direction: column;
 }
 
-.log-text label{
+.log-text label {
     margin-bottom: 15px;
 }
 
 
-.inline{
+.inline {
     display: flex;
     justify-content: space-between;
 }
 
-.log-text .inline #phone{
+.log-text .inline #phone {
     width: 79%;
 }
 
-.phone{
+.phone {
     width: 20%;
     height: 42px;
     border: 0;
@@ -82,15 +82,16 @@ body{
     background-color: #F2F2F2;
 }
 
-.phone:active, .CAPTCHA:active{
-    box-shadow:inset 3px 3px 0px rgba(0, 0, 0, 0.1);
+.phone:active,
+.CAPTCHA:active {
+    box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.1);
 }
 
-#CAPTCHA{
+#CAPTCHA {
     width: 84%;
 }
 
-.CAPTCHA{
+.CAPTCHA {
     width: 15%;
     height: 42px;
     border: 0;
@@ -100,17 +101,17 @@ body{
     background-color: #F2F2F2;
 }
 
-#birthday{
+#birthday {
     margin-bottom: 13px;
 
 }
 
-.resigner p{
+.resigner p {
     color: #FF4252;
     margin-bottom: 35px;
 }
 
-.resigner input[type="submit"]{
+.resigner input[type="submit"] {
     cursor: pointer;
     background-color: #43AAC1;
     color: #FFFDFD;
@@ -122,34 +123,36 @@ body{
 
 }
 
-.resigner input[type="submit"]:hover{
-    background-color: #E8A7BF;
-    color: #502D0A;
+@media screen and (min-width: 1200px) {
+    .resigner input[type="submit"]:hover {
+        background-color: #E8A7BF;
+        color: #502D0A;
+    }
 }
 
 /* --------------------428-------------------------- */
 
 @media screen and (max-width: 428px) {
-    .block{
+    .block {
         padding-top: 80px;
         padding-bottom: 100px;
     }
 
-    .middle{
+    .middle {
         padding: 20px 0;
         width: calc(100vw - 40px);
     }
 
-    .middle h1{
+    .middle h1 {
         font-size: 26px;
         margin-bottom: 30px;
     }
 
-    .middle input{
+    .middle input {
         width: 100%;
     }
 
-    .log-text{
+    .log-text {
         width: 75vw;
     }
 
@@ -157,38 +160,38 @@ body{
         margin-bottom: 20px;
     }
 
-    .log-text .inline #phone{
+    .log-text .inline #phone {
         width: calc(100% - 105px);
     }
 
-    .phone{
+    .phone {
         width: 100px;
     }
 
-    #CAPTCHA{
+    #CAPTCHA {
         width: calc(100% - 5px - 45px);
     }
 
-    .CAPTCHA{
+    .CAPTCHA {
         width: 45px;
     }
 
-    #birthday{
+    #birthday {
         margin-bottom: 10px;
         width: 75vw;
     }
 
-    .resigner p{
+    .resigner p {
         margin-bottom: 20px;
         font-size: 14px;
     }
 
-    .resigner input[type="submit"]{
+    .resigner input[type="submit"] {
         margin-bottom: 10px;
         margin-top: 30px;
         width: 75vw;
         font-size: 16px;
     }
 
-    
+
 }

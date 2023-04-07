@@ -1,4 +1,6 @@
 $(function () {
+
+    // 商店圖片在 428px 換成小圖
     (function () {
         if ($(this).width() < 428) {
             $(".shop-img img").attr("src", "../img/shop/shop-small.jpg");
@@ -6,7 +8,7 @@ $(function () {
     })();
 
 
-
+    // 打開子選單
     let is_open = false;
 
     $(".left > li > a:first").click(function (e) {
@@ -26,6 +28,8 @@ $(function () {
 
     });
 
+
+    // 按漢堡條打開MENU
     $(".bar").click(function () {
         $(".right li:first").toggleClass("js-open");
         $("nav").toggleClass("js-open");
@@ -34,6 +38,8 @@ $(function () {
         $(".menu-bg").toggleClass("js-open");
     });
 
+
+    // 按其他地方條打開MENU 
     $(".menu-bg").click(function () {
         $(".right li:first").removeClass("js-open");
         $("nav").removeClass("js-open");

@@ -82,9 +82,11 @@ label[for="password"] {
     line-height: 1.6;
 }
 
-.another h2:hover {
-    border-bottom: 1px solid #E8A7BF;
-    color: #E8A7BF;
+@media screen and (min-width: 1200px) {
+    .another h2:hover {
+        border-bottom: 1px solid #E8A7BF;
+        color: #E8A7BF;
+    }
 }
 
 .log-in input[type="submit"] {
@@ -98,9 +100,11 @@ label[for="password"] {
     font-size: 16px;
 }
 
-.log-in input[type="submit"]:hover {
-    background-color: #E8A7BF;
-    color: #502D0A;
+@media screen and (min-width: 1200px) {
+    .log-in input[type="submit"]:hover {
+        background-color: #E8A7BF;
+        color: #502D0A;
+    }
 }
 
 @media screen and (max-width: 428px) {

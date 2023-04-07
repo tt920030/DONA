@@ -1,5 +1,7 @@
 $(function () {
     // console.log($(window).scrollTop());
+
+    // 判斷重整時在哪個位置,header是否變色
     (function () {
         let top = $(window).scrollTop();
         let target = $(".bg-words").offset().top;
@@ -16,6 +18,8 @@ $(function () {
         }
     })();
 
+
+    // 超過banner之後，header變色
     $(window).scroll(function () {
         // console.log($(this).scrollTop());
         let top = $(this).scrollTop();
@@ -35,7 +39,7 @@ $(function () {
     });
 
 
-
+    // 按其他地方header變色
     $(".menu-bg").click(function () {
         let is_banner = $("header").hasClass('-banner');
 
@@ -45,6 +49,7 @@ $(function () {
 
     });
 
+    // 按漢堡地方header變色
     $(".bar").click(function () {
         let is_banner = $("header").hasClass('-banner');
         // console.log(is_banner);
@@ -55,6 +60,8 @@ $(function () {
 
     });
 
+
+    // 移動塔塔背景
     $(".line1").hover(
         function () {
             $(".comb").animate({ backgroundPosition: "0px" });
@@ -73,6 +80,9 @@ $(function () {
         }
     );
 
+
+    // 換甜甜圈資訊
+    // 介紹內容還未完成
     $(".product-sub li").hover(
 
         function () {

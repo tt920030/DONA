@@ -2,11 +2,11 @@
 @import url(header.css);
 @import url(footer.css);
 
-body{
+body {
     background-color: #43AAC1;
 }
 
-.wrapper{
+.wrapper {
     /* outline: 5px solid red; */
     width: 1200px;
     margin: 0 auto;
@@ -14,30 +14,30 @@ body{
 }
 
 /* ---------------------main---------------------- */
-.bg-word{
+.bg-word {
     background-image: url(../img/background/Donutworry_pink.png);
     background-repeat: no-repeat;
     background-position: left 30px bottom 0;
 }
 
-.overflow{
+.overflow {
     overflow: hidden;
     width: 100%;
     height: auto;
 }
 
-.main{
+.main {
     padding-top: 200px;
     display: flex;
     justify-content: center;
-    
+
 }
 
-.picture{
+.picture {
     width: 50%;
 }
 
-.container{
+.container {
     margin: 0 auto;
     width: 550px;
     height: 550px;
@@ -46,11 +46,11 @@ body{
     border-radius: 5px;
 }
 
-.container img{
+.container img {
     width: 100%;
 }
 
-.detail{
+.detail {
     width: 50%;
     display: flex;
     align-items: center;
@@ -58,43 +58,45 @@ body{
     flex-direction: column;
 }
 
-.block{
+.block {
     text-align: left;
 }
 
-.detail h1{
+.detail h1 {
     color: #FFFDFD;
     font-size: 34px;
     margin-bottom: 30px;
 }
 
-.detail p{
+.detail p {
     font-size: 24px;
     color: #FFFDFD;
     margin-bottom: 30px;
 }
 
-.detail ul{
+.detail ul {
     display: flex;
 }
 
-.detail li{
+.detail li {
     color: #FFFDFD;
 }
 
-.detail i{
+.detail i {
     cursor: pointer;
 }
 
-.detail i:hover{
-    color: #E8A7BF;
+@media screen and (min-width: 1200px) {
+    .detail i:hover {
+        color: #E8A7BF;
+    }
 }
 
-.num{
+.num {
     padding: 0 20px;
 }
 
-.detail button{
+.detail button {
     display: block;
     margin: 30px 0px;
     background-color: #FFFDFD;
@@ -106,48 +108,50 @@ body{
     font-size: 16px;
 }
 
-.detail button:hover{
-    color: #502D0A;
-    background-color: #E8A7BF;
+@media screen and (min-width: 1200px) {
+    .detail button:hover {
+        color: #502D0A;
+        background-color: #E8A7BF;
+    }
 }
 
-.detail table{
+.detail table {
     color: #FFFDFD;
     width: 274px;
 }
 
-.detail thead{
+.detail thead {
     border-bottom: 1px solid #FFFDFD;
 }
 
-.detail thead tr{}
+.detail thead tr {}
 
-.detail thead td{
+.detail thead td {
     padding: 10px 0;
     text-align: center;
 }
 
-.detail tbody tr{}
+.detail tbody tr {}
 
-.detail tbody td{
+.detail tbody td {
     padding: 8px 15px;
 
 }
 
-.text-right{
+.text-right {
     text-align: right;
 }
 
-.detail tbody .sub{
+.detail tbody .sub {
     padding-left: 40px;
 }
 
-.text{
+.text {
     margin: 10px 0 10px;
     padding-left: 165px;
 }
 
-.text p{
+.text p {
     font-size: 16px;
     line-height: 30px;
     text-align: justify;
@@ -157,70 +161,73 @@ body{
 /* ----------------section------------------ */
 
 
-section{
+section {
     padding-top: 200px;
     padding-left: 25px;
 }
 
-.sub-title{
+.sub-title {
     display: flex;
 }
 
-.sub-title p{
+.sub-title p {
     color: #FFFDFD;
     margin-bottom: 40px;
 }
 
-.next img{
+.next img {
     display: block;
     height: 16px;
     cursor: pointer;
     padding: 0 25px;
 }
 
-.next{
+.next {
     display: flex;
     margin-left: 170px;
 }
 
-.next img:first-child{
+.next img:first-child {
     transform: rotate(180deg);
-    
+
 }
 
-.next img:last-child{
+.next img:last-child {
     margin-left: 0;
 }
 
-section ul{
+section ul {
     display: flex;
     flex-shrink: none;
     margin-bottom: 50px;
     cursor: grab;
 }
 
-section li{
+section li {
     margin-right: 15px;
 }
 
-section li:hover .bg{
-    background-color: #E8A7BF;
+@media screen and (min-width: 1200px) {
+    section li:hover .bg {
+        background-color: #E8A7BF;
+    }
+
+    section li:hover h2,
+    section li:hover p {
+        color: #E8A7BF;
+    }
 }
 
-section li:hover h2,section li:hover p{
-    color: #E8A7BF;
-}
+section a {}
 
-section a{}
-
-.bg{
+.bg {
     width: 400px;
     height: 250px;
     background-color: #FFFDFD;
     border-radius: 5px;
 }
 
-.picture-list{
+.picture-list {
     width: 250px;
     height: 250px;
     margin: 0 auto;
@@ -228,101 +235,101 @@ section a{}
 }
 
 
-.picture-list img{
+.picture-list img {
     width: 100%;
 }
 
-section h2{
+section h2 {
     margin-top: 30px;
     color: #FFFDFD;
     margin-bottom: 5px;
 }
 
-section h2 + p{
+section h2+p {
     color: #FFFDFD;
 }
 
 
 /* --------------------428-------------------------- */
 
-@media screen and (max-width: 428px){
-    .wrapper{
+@media screen and (max-width: 428px) {
+    .wrapper {
         width: 90vw;
     }
-    
-    .picture{
+
+    .picture {
         width: 100%;
     }
 
-    .bg-word{
+    .bg-word {
         background-image: none;
     }
 
-    .main{
+    .main {
         padding-top: 100px;
         flex-direction: column;
     }
 
-    .container{
+    .container {
         width: 80vw;
         height: 80vw;
     }
 
-    .detail{
+    .detail {
         width: 100%;
         margin-top: 30px;
         padding: 0 20px;
     }
 
-    .detail h1{
+    .detail h1 {
         margin-bottom: 20px;
     }
 
-    .detail p{
+    .detail p {
         margin-bottom: 20px;
     }
 
-    .detail button{
+    .detail button {
         width: 75vw;
         font-size: 16px;
         margin: 30px auto;
     }
 
-    .detail table{
+    .detail table {
         align-self: center;
     }
 
 
 
-    .text{
+    .text {
         width: 100%;
         padding: 0;
     }
 
-    section{
+    section {
         padding-top: 150px;
         padding-left: 0;
     }
 
-    .bg{
+    .bg {
         width: 70vw;
         height: 50vw;
     }
 
-    .picture-list{
+    .picture-list {
         width: 50vw;
         height: 50vw;
     }
 
-    .sub-title{
+    .sub-title {
         justify-content: space-between;
     }
 
-    .next img{
+    .next img {
         padding: 0 15px;
     }
 
-    .next{
+    .next {
         margin: 0;
     }
 }
