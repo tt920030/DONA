@@ -82,7 +82,6 @@ $(function () {
 
 
     // 換甜甜圈資訊
-    // 介紹內容還未完成
     $(".product-sub li").hover(
 
         function () {
@@ -90,13 +89,23 @@ $(function () {
             let change_title = $(this).find(".product-text h3").text();
             $(".big-picture img").attr("src", change_pic);
             $(".photo-text h2").text(change_title);
+
+
+            $.get("../json/product.json", function (data) {
+
+                $.each(data, function (index, item) {
+                    if (change_title === item.name) {
+                        $(".photo-text p").text(item.info);
+                    }
+                });
+            });
         },
         function () {
             $(".big-picture img").attr("src", "img/element/choco.jpg");
             $(".photo-text h2").text("巧克碎片甜甜圈");
+            $(".photo-text p").text("酥脆的巧克力碎片搭上絲滑如順的巧克力醬，形成了口感豐富、層次鮮明的味道，讓人上癮。每一口都能感受到碎片在口中破裂的聲音，並且感受到醬在嘴裡化開的滑順口感。");
         }
     );
-
 
 
 

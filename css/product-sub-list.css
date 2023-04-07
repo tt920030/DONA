@@ -198,13 +198,13 @@ section {
 
 section ul {
     display: flex;
-    flex-shrink: none;
     margin-bottom: 50px;
-    cursor: grab;
+    transform: translate(0px);
 }
 
 section li {
     margin-right: 15px;
+    flex-shrink: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -331,5 +331,6 @@ section h2+p {
 
     .next {
         margin: 0;
+        display: none;
     }
 }
