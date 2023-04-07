@@ -270,19 +270,14 @@ header{
 .info{
     background-color: #FFFDFD;
     height: 100px;
-    /* overflow: hidden; */
+    overflow: hidden;
     border-bottom: 1px solid #502D0A;
     position: relative;
 }
 
 .info a{
-    /* position: absolute;
-    left: 0;
-    top: 0; */
     display: block;
     line-height: 100px;
-    
-    
 }
 
 .info1{
@@ -290,13 +285,8 @@ header{
     align-items: center;
     flex-shrink: 0;
     
-    /* transform: translate(100%); */
     animation: info 13s linear infinite;
 }
-
-/* .info2{
-    animation: info2 10s linear infinite;
-} */
 
 @keyframes info{
     0%{
@@ -809,22 +799,9 @@ header{
         display: none;
     }
 
-    /* .banner-title h1{
-        font-size: 30px;
-        text-shadow: 0 0 5px #00000034;
+    .info1{
+        animation: info 25s linear infinite;
     }
-
-    .banner-title h1 + h1{
-        margin-left: 0;
-    }
-
-    .banner-title img{
-        width: 100px;
-    }
-
-    .banner-title img + h1{
-        margin-left: 0;
-    } */
 
     .bg-words{
         background-image: none;
