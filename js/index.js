@@ -80,32 +80,75 @@ $(function () {
         }
     );
 
+    // 手機板加上第四個甜甜圈
+    (function () {
+        if ($(window).width() < 428) {
+            $(".product-sub ul").append(`
+                <li>
+                    <div class="list list-2">
+                        <img src="img/products/product7.png" alt="">
+                    </div>
+                    <div class="product-text">
+                        <h3>黑巧克甜甜圈</h3>
+                        <p>$60</p>
+                    </div>
+                </li>
+             `);
+        }
+    })();
 
     // 換甜甜圈資訊
-    $(".product-sub li").hover(
+    (function () {
+        if ($(window).width() >= 1200) {
+            $(".product-sub li").hover(
 
-        function () {
-            let change_pic = $(this).find(".list img").attr("src");
-            let change_title = $(this).find(".product-text h3").text();
-            $(".big-picture img").attr("src", change_pic);
-            $(".photo-text h2").text(change_title);
+                function () {
+                    let change_pic = $(this).find(".list img").attr("src");
+                    let change_title = $(this).find(".product-text h3").text();
+                    $(".big-picture img").attr("src", change_pic);
+                    $(".photo-text h2").text(change_title);
 
 
-            $.get("../json/product.json", function (data) {
+                    $.get("../json/product.json", function (data) {
 
-                $.each(data, function (index, item) {
-                    if (change_title === item.name) {
-                        $(".photo-text p").text(item.info);
-                    }
-                });
-            });
-        },
-        function () {
-            $(".big-picture img").attr("src", "img/element/choco.jpg");
-            $(".photo-text h2").text("巧克碎片甜甜圈");
-            $(".photo-text p").text("酥脆的巧克力碎片搭上絲滑如順的巧克力醬，形成了口感豐富、層次鮮明的味道，讓人上癮。每一口都能感受到碎片在口中破裂的聲音，並且感受到醬在嘴裡化開的滑順口感。");
+                        $.each(data, function (index, item) {
+                            if (change_title === item.name) {
+                                $(".photo-text p").text(item.info);
+                            }
+                        });
+                    });
+                },
+                function () {
+                    $(".big-picture img").attr("src", "img/products/product7.png");
+                    $(".photo-text h2").text("黑巧克甜甜圈");
+                    $(".photo-text p").text("黑巧克甜甜圈是一款結合了香濃黑巧克力與鬆軟甜甜圈口感的美食。它外皮金黃鬆軟，內部則是豐富的黑巧克力香氣和口感，入口即化，令人回味無窮。黑巧克甜甜圈不僅適合當做早餐或下午茶點心，也是一款完美的甜點選擇。");
+                }
+            );
+        } else {
+            $(".product-sub li").click(
+
+                function () {
+                    let change_pic = $(this).find(".list img").attr("src");
+                    let change_title = $(this).find(".product-text h3").text();
+                    $(".big-picture img").attr("src", change_pic);
+                    $(".photo-text h2").text(change_title);
+
+
+                    $.get("../json/product.json", function (data) {
+
+                        $.each(data, function (index, item) {
+                            if (change_title === item.name) {
+                                $(".photo-text p").text(item.info);
+                            }
+                        });
+                    });
+                }
+            );
         }
-    );
+
+    })();
+
+
 
 
 

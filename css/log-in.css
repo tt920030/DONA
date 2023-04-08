@@ -59,6 +59,30 @@ label[for="log-in"] {
     color: #502D0A;
 }
 
+#log-in.-error, #password.-error{
+    border: 1px solid rgb(247, 76, 76);
+    animation: error .3s;
+
+}
+
+@keyframes error {
+    0%{
+        transform: translate(0px);
+    }
+    25%{
+        transform: translate(-10px);
+    }
+    50%{
+        transform: translate(10px);
+    }
+    75%{
+        transform: translate(-10px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
 #log-in {
     margin-bottom: 40px;
 }

@@ -62,6 +62,35 @@ body {
     margin-bottom: 15px;
 }
 
+label[for="name"]::after{
+    content: "*此欄位必填";
+    color: rgb(247, 76, 76);
+}
+
+label[for="email"]::after{
+    content: "*email格式錯誤";
+    color: rgb(247, 76, 76);
+}
+
+label[for="phone"]::after{
+    content: "*請填寫整數";
+    color: rgb(247, 76, 76);
+}
+
+label[for="CAPTCHA"]::after{
+    content: "*驗證碼錯誤";
+    color: rgb(247, 76, 76);
+}
+
+label[for="password"]::after{
+    content: "*密碼需6位以上";
+    color: rgb(247, 76, 76);
+}
+
+label[for="password-comfirm"]::after{
+    content: "*輸入的二次密碼不相符";
+    color: rgb(247, 76, 76);
+}
 
 .inline {
     display: flex;
@@ -121,6 +150,40 @@ body {
     margin-bottom: 0;
     margin-top: 50px;
 
+}
+
+#name.-error,
+#email.-error,
+#phone.-error,
+#CAPTCHA.-error,
+#birthday.-error,
+#password.-error,
+#password-comfirm.-error {
+    border: 1px solid rgb(247, 76, 76);
+    animation: error .3s;
+
+}
+
+@keyframes error {
+    0% {
+        transform: translate(0px);
+    }
+
+    25% {
+        transform: translate(-10px);
+    }
+
+    50% {
+        transform: translate(10px);
+    }
+
+    75% {
+        transform: translate(-10px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
 }
 
 @media screen and (min-width: 1200px) {

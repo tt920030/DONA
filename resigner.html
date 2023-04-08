@@ -46,23 +46,23 @@
 
     <div class="block">
         <div class="resigner">
-            <div class="middle">
+            <form class="middle">
                 <h1>註冊</h1>
                 
                 <div class="log-text">
-                    <label for="name">姓名</label>
+                    <label for="name">姓名*</label>
                     <input type="text" id="name">
 
-                    <label for="email">email</label>
+                    <label for="email">email*</label>
                     <input type="text" id="email">
 
-                    <label for="phone">手機</label>
+                    <label for="phone">手機*</label>
                     <div class="inline">
                         <input type="text" id="phone">
                         <button class="phone">發送驗證碼</button>
                     </div>
                     
-                    <label for="CAPTCHA">簡訊驗證碼</label>
+                    <label for="CAPTCHA">簡訊驗證碼*</label>
                     <div class="inline">
                         <input type="text" id="CAPTCHA">
                         <button class="CAPTCHA">確認</button>
@@ -72,15 +72,15 @@
                     <input type="date" id="birthday">
                     <p>*請正確填寫，註冊成功後將無法修改</p>
 
-                    <label for="password">密碼</label>
+                    <label for="password">密碼*</label>
                     <input type="text" id="password">
 
-                    <label for="password-comfirm">密碼確認</label>
+                    <label for="password-comfirm">密碼確認*</label>
                     <input type="text" id="password-comfirm">
                 </div>
                 
                 <input type="submit" value="確認">
-            </div>
+            </form>
         </div>
     </div>
 
@@ -150,6 +150,8 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="vendors/is.min.js"></script>
     <script src="js/all.js"></script>
+    <script src="js/resigner.js"></script>
 </body>
 </html>

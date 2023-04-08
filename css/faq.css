@@ -42,6 +42,9 @@ body {
     padding-left: 67px;
 }
 
+.faq li:last-child{
+    border-bottom: 1px solid #FFFDFD;
+}
 
 
 .faq li a {
@@ -50,6 +53,14 @@ body {
     color: #FFFDFD;
 
 }
+
+.faq li p{
+    display: none;
+    line-height: 30px;
+    padding-bottom: 50px;
+    text-align: justify;
+}
+
 
 @media screen and (min-width: 1200px) {
     .faq li a:hover {
@@ -78,6 +89,11 @@ body {
     left: 0;
     right: 0;
     margin: auto;
+    transition: all .5s;
+}
+
+.faq li a.-show span::before{
+    transform: rotate(90deg);
 }
 
 .faq li span::after {
@@ -127,5 +143,8 @@ body {
         line-height: 70px;
     }
 
+    .faq li p{
+        padding-bottom: 20px;
+    }
 
 }
