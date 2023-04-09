@@ -24,7 +24,6 @@ body {
 }
 
 .resigner input {
-    margin-bottom: 40px;
 }
 
 .middle {
@@ -60,36 +59,7 @@ body {
 
 .log-text label {
     margin-bottom: 15px;
-}
-
-label[for="name"]::after{
-    content: "*此欄位必填";
-    color: rgb(247, 76, 76);
-}
-
-label[for="email"]::after{
-    content: "*email格式錯誤";
-    color: rgb(247, 76, 76);
-}
-
-label[for="phone"]::after{
-    content: "*請填寫整數";
-    color: rgb(247, 76, 76);
-}
-
-label[for="CAPTCHA"]::after{
-    content: "*驗證碼錯誤";
-    color: rgb(247, 76, 76);
-}
-
-label[for="password"]::after{
-    content: "*密碼需6位以上";
-    color: rgb(247, 76, 76);
-}
-
-label[for="password-comfirm"]::after{
-    content: "*輸入的二次密碼不相符";
-    color: rgb(247, 76, 76);
+    margin-top: 35px;
 }
 
 .inline {
@@ -130,14 +100,16 @@ label[for="password-comfirm"]::after{
     background-color: #F2F2F2;
 }
 
-#birthday {
-    margin-bottom: 13px;
-
-}
+#birthday {}
 
 .resigner p {
+    display: none;
     color: #FF4252;
-    margin-bottom: 35px;
+    margin-top: 5px;
+}
+
+.resigner p.-alert{
+    display: block;
 }
 
 .resigner input[type="submit"] {
@@ -219,10 +191,6 @@ label[for="password-comfirm"]::after{
         width: 75vw;
     }
 
-    .resigner input {
-        margin-bottom: 20px;
-    }
-
     .log-text .inline #phone {
         width: calc(100% - 105px);
     }
@@ -245,7 +213,6 @@ label[for="password-comfirm"]::after{
     }
 
     .resigner p {
-        margin-bottom: 20px;
         font-size: 14px;
     }
 
@@ -256,5 +223,7 @@ label[for="password-comfirm"]::after{
         font-size: 16px;
     }
 
-
+    .log-text label{
+        margin-top: 25px;
+    }
 }

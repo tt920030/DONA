@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="css/resigner.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap"
+        rel="stylesheet">
     <title>註冊</title>
 </head>
+
 <body>
     <header class="green-bg">
         <div class="bar">
@@ -32,12 +38,12 @@
                 <li><a href="shop.html">店鋪資訊</a></li>
                 <li><a href="faq.html">常見問題</a></li>
             </ul>
-            
+
         </nav>
         <a href="index.html">
             <img class="logo" src="img/logo/logo_green.svg" alt="">
         </a>
-        
+
         <ul class="right white">
             <li><a href="log-in.html">登入</a></li>
             <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -48,44 +54,51 @@
         <div class="resigner">
             <form class="middle">
                 <h1>註冊</h1>
-                
-                <div class="log-text">
-                    <label for="name">姓名*</label>
-                    <input type="text" id="name">
 
+                <div class="log-text">
+                    
+                    <label for="name">姓名*</label>
+                    <input type="text" id="name" placeholder="請輸入您的姓名">
+                    <p>*此欄位必填</p>
+    
                     <label for="email">email*</label>
-                    <input type="text" id="email">
+                    <input type="email" id="email" placeholder="請輸入您的email">
+                    <p>*email格式錯誤</p>
 
                     <label for="phone">手機*</label>
                     <div class="inline">
-                        <input type="text" id="phone">
+                        <input type="tel" id="phone" placeholder="請輸入您的手機">
                         <button class="phone">發送驗證碼</button>
                     </div>
-                    
+                    <p>*手機格式錯誤</p>
+
                     <label for="CAPTCHA">簡訊驗證碼*</label>
                     <div class="inline">
-                        <input type="text" id="CAPTCHA">
+                        <input type="tel" id="CAPTCHA" placeholder="請輸入驗證碼">
                         <button class="CAPTCHA">確認</button>
                     </div>
-                    
+                    <p>*驗證碼錯誤</p>
+
                     <label for="birthday">生日</label>
                     <input type="date" id="birthday">
-                    <p>*請正確填寫，註冊成功後將無法修改</p>
+                    <p class="-alert">*請正確填寫，註冊成功後將無法修改</p>
 
                     <label for="password">密碼*</label>
-                    <input type="text" id="password">
+                    <input type="password" id="password" placeholder="密碼須包含大小寫英文字母與數字">
+                    <p>*密碼需6位以上</p>
 
                     <label for="password-comfirm">密碼確認*</label>
-                    <input type="text" id="password-comfirm">
+                    <input type="password" id="password-comfirm" placeholder="請再次輸入密碼">
+                    <p>*輸入的二次密碼不相符</p>
                 </div>
-                
+
                 <input type="submit" value="確認">
             </form>
         </div>
     </div>
 
     <footer class="green">
-        
+
         <ul class="footer-left">
             <li>
                 <img src="img/logo/logo_green.svg" alt="">
@@ -94,11 +107,11 @@
                     <input type="text" placeholder="example@gmail.com">
                     <input type="submit" value=" ">
                 </div>
-                
+
             </li>
         </ul>
         <ul class="footer-middle">
-            
+
             <li>
                 <p>更多資訊</p>
                 <ol class="green">
@@ -139,10 +152,14 @@
                         <p>DONA@gmail.com</p>
                     </li>
                     <li class="social">
-                        <a href="https://zh-tw.facebook.com/" title="Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.youtube.com/" title="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://twitter.com/?lang=zh-Hant" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://zh-tw.facebook.com/" title="Facebook" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/" title="YouTube" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/" title="Instagram" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=zh-Hant" title="Twitter" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
                     </li>
                 </ol>
             </li>
@@ -154,4 +171,5 @@
     <script src="js/all.js"></script>
     <script src="js/resigner.js"></script>
 </body>
+
 </html>
