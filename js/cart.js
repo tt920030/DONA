@@ -7,6 +7,28 @@ $(function () {
         carts = local;
     }
 
+    // 購物車數字出現
+    function cartNumber() {
+        
+        let local = JSON.parse(localStorage.getItem("cart"));
+
+        
+        if (local === null || local.length === 0) {
+            $(".right p").css({display: "none"});
+        } else {
+            
+            $(".right p").css({display: "flex"});
+
+            let num = 0;
+            $(local).each(function(index, item){
+                num = Number(num) + Number(item.number);
+                // console.log(num);
+            });
+
+            $(".right p span").text(num);
+        }
+    }
+
 
     // 加入購物車
     $(".detail button").click(function () {
@@ -41,7 +63,7 @@ $(function () {
 
 
         localStorage.setItem("cart", JSON.stringify(carts));
-
+        cartNumber();
         // localStorage.clear();
     });
 
@@ -87,11 +109,11 @@ $(function () {
                                 </td>
                                 <td class="number">
                                     <ul>
-                                        <li>
+                                        <li id="cart-minus">
                                             <i class="fa-solid fa-minus"></i>
                                         </li>
                                         <li class="num">${number}</li>
-                                        <li>
+                                        <li id="cart-plus">
                                             <i class="fa-solid fa-plus"></i>
                                         </li>
                                     </ul>
@@ -104,28 +126,13 @@ $(function () {
         });
     })();
 
-    // 刪除商品
-    $("tbody").on("click", ".delete", function (e) {
-        e.preventDefault();
-        $(this).closest("tr").prop("outerHTML", "");
-        // console.log($(this).closest("tr").prop("outerHTML"));
-        let del = $(this).parent().find("h2").text();
-        for (let i = 0; i < carts.length; i++) {
-            if (carts[i].name === del) {
-                carts.splice(i, 1);
-            }
-        }
-        console.log(carts);
-        localStorage.setItem("cart", JSON.stringify(carts));
-    });
-
-    // 增減商品
-
     // 總計
-    let total = 0;
+
 
     function sum() {
         $.get("../json/product.json", function (data) {
+            let total = 0;
+
             $(data).each(function (index, item) {
 
                 for (let i = 0; i < carts.length; i++) {
@@ -145,5 +152,94 @@ $(function () {
         });
     }
     sum();
+
+
+
+
+    // 刪除商品
+    $("tbody").on("click", ".delete", function (e) {
+        e.preventDefault();
+        $(this).closest("tr").prop("outerHTML", "");
+        // console.log($(this).closest("tr").prop("outerHTML"));
+        let del = $(this).parent().find("h2").text();
+        for (let i = 0; i < carts.length; i++) {
+            if (carts[i].name === del) {
+                carts.splice(i, 1);
+            }
+        }
+
+        localStorage.setItem("cart", JSON.stringify(carts));
+        sum();
+        cartNumber();
+    });
+
+    // 增商品
+
+    $("tbody").on("click", "#cart-plus", function () {
+        let num = $(this).prev().text();
+        num++;
+        $(this).prev().text(num);
+
+        let name = $(this).closest("tr").find(".product-name h2").text();
+        for (let i = 0; i < carts.length; i++) {
+
+            if (carts[i].name == name) {
+
+                carts[i].number++;
+                localStorage.setItem("cart", JSON.stringify(carts));
+                sum();
+                cartNumber();
+            }
+        };
+
+    });
+
+    // 減商品
+    $("tbody").on("click", "#cart-minus", function () {
+        let num = $(this).next().text();
+        num--;
+
+        if (num === 0) {
+            let answer = confirm("確定移除商品?");
+            if (answer) {
+                $(this).closest("tr").prop("outerHTML", "");
+                
+                let del = $(this).closest("tr").find("h2").text();
+                
+                for (let i = 0; i < carts.length; i++) {
+                    if (carts[i].name === del) {
+                        carts.splice(i, 1);
+                    }
+                }
+
+                localStorage.setItem("cart", JSON.stringify(carts));
+                sum();
+                cartNumber();
+            } else {
+                num++;
+            }
+        } else {
+            $(this).next().text(num);
+
+            let name = $(this).closest("tr").find(".product-name h2").text();
+            for (let i = 0; i < carts.length; i++) {
+
+                if (carts[i].name == name) {
+
+                    carts[i].number--;
+                    localStorage.setItem("cart", JSON.stringify(carts));
+                    sum();
+                    cartNumber();
+                }
+            };
+            
+        }
+
+
+
+
+
+
+    });
 
 });

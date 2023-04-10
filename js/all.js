@@ -48,5 +48,26 @@ $(function () {
         $(".menu-bg").removeClass("js-open");
     });
 
+    // 購物車數字出現
+    function cartNumber() {
+        
+        let local = JSON.parse(localStorage.getItem("cart"));
 
+        
+        if (local === null || local.length === 0) {
+
+        } else {
+            
+            $(".right p").css({display: "flex"});
+
+            let num = 0;
+            $(local).each(function(index, item){
+                num = Number(num) + Number(item.number);
+                // console.log(num);
+            });
+
+            $(".right p span").text(num);
+        }
+    }
+    cartNumber();
 });

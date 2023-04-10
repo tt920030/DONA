@@ -1,5 +1,6 @@
 $(function () {
     // console.log($(window).scrollTop());
+    $(window).sw
 
     // 判斷重整時在哪個位置,header是否變色
     (function () {

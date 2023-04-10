@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Noto Sans TC', 'Montserrat', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     font-size: 16px;
     color: #502D0A;
     background-color: #FFFDFD;
@@ -138,12 +138,37 @@ header {
     padding: 0 20px;
 }
 
+.right li:last-child a {
+    position: relative;
+}
 
 .right i {
     display: block;
     font-size: 25px;
 }
 
+.right p {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ffe2ec;
+    height: 24px;
+    width: 24px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    right: -20px;
+    top: 5px;
+    font-size: 0;
+    display: none;
+}
+
+.right p span {
+    font-size: 12px;
+    color: #502D0A;
+    text-align: center;
+    letter-spacing: 0;
+}
 
 .white>li>a {
     color: #FFFDFD;

@@ -5,6 +5,14 @@
 body{
     background-color: #43AAC1;
 }
+
+.left>li>a, .right li a{
+    color: #FFFDFD;
+}
+
+.left>li>a:hover, .right li a:hover{
+    color: #E8A7BF;
+}
 /* ----------------banner1-------------------- */
 
 .banner3-1{
