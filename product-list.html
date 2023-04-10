@@ -61,7 +61,7 @@
                     <option value="巧克力口味">巧克力口味</option>
                 </select>
                 <ul>
-                    <li>
+                    <!-- <li>
                         <a href="product-sub-list.html">
                             <div class="bg">
                                 <div class="picture">
@@ -230,15 +230,14 @@
                             <p>$65</p>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
-            <div class="next-page">
+            <!-- <div class="next-page">
                 <ul>
                     <li><a class="-on" href="product-list.html">1</a></li>
-                    <li><a href="product-list.html">2</a></li>
-                    <li><a href="product-list.html">3</a></li>
+                    <li><a href="product-list2.html">2</a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         
         
@@ -252,10 +251,10 @@
             <li>
                 <img src="img/logo/logo_green.svg" alt="">
                 <p>訂閱我們</p>
-                <div class="email green">
-                    <input type="text" placeholder="example@gmail.com">
+                <form class="email">
+                    <input type="email" placeholder="example@gmail.com" id="subscribe">
                     <input type="submit" value=" ">
-                </div>
+                </form>
                 
             </li>
         </ul>
@@ -312,6 +311,7 @@
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="vendors/is.min.js"></script>
     <script src="js/all.js"></script>
     <script src="js/product-list.js"></script>
 </body>

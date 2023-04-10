@@ -70,4 +70,21 @@ $(function () {
         }
     }
     cartNumber();
+
+    // 訂閱
+    $(".email input[type='submit']").click(function(e){
+
+        let send_data = true;
+
+        if($("#subscribe").val() === "" || is.email($("#subscribe").val()) === false){
+            alert("email格式錯誤");
+            send_data = false;
+        }else{
+            alert("註冊成功!");
+        }
+
+        if (!send_data) {
+            e.preventDefault();
+        }
+    });
 });

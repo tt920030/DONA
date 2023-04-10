@@ -37,7 +37,7 @@ footer {
     display: flex;
 }
 
-.email input[type="text"] {
+.email input[type="email"] {
     border-radius: 0;
     appearance: none;
     outline: none;
@@ -53,7 +53,7 @@ footer {
     background-size: 17px;
 }
 
-.email input[type="text"]::placeholder {
+.email input[type="email"]::placeholder {
     color: #502D0A;
     opacity: .5;
     letter-spacing: 1px;
@@ -74,14 +74,14 @@ footer {
     background-position: center center;
 }
 
-.green input[type="text"] {
+.green input[type="email"] {
     background-color: #43AAC1;
     background-image: url(../img/input/envelope_white.svg);
     color: #FFFDFD;
     border-bottom: 1px solid #FFFDFD;
 }
 
-.green input[type="text"]::placeholder {
+.green input[type="email"]::placeholder {
     color: #FFFDFD;
     opacity: .5;
 }
@@ -177,7 +177,7 @@ footer {
         display: none;
     }
 
-    .email input[type="text"] {
+    .email input[type="email"] {
         width: calc(100vw - 20px - 40px);
         background-size: 22px;
         font-size: 20px;

@@ -42,6 +42,8 @@ header {
     font-weight: bold;
     line-height: 1.2;
     display: inline-block;
+    position: relative;
+    z-index: 1;
 }
 
 .banner-title img+h1 {
@@ -54,9 +56,64 @@ header {
 
 .right-block {
     width: 50%;
-    background-image: url(../img/banners/banner1-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    overflow: hidden;
+    max-height: 900px;
+    position: relative;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* display: none; */
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+    
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+        transform: scale(120%);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
+
+.dot_container {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    margin: 15px 0;
+    background-color: #FFFDFD;
+    border-radius: 50%;
+    display: block;
+    transition: background-color 0.6s ease;
+    /* display: inline-block; */
+    cursor: pointer;
+}
+
+span.-active {
+    background-color: inherit;
+    border: 5px solid #FFFDFD;
 }
 
 /* -------------------section1--------------------- */
@@ -270,6 +327,7 @@ header {
         color: #FFFDFD;
     }
 }
+
 /* -------------------info--------------------- */
 .info {
     background-color: #FFFDFD;
@@ -289,7 +347,13 @@ header {
     align-items: center;
     flex-shrink: 0;
 
-    animation: info 13s linear infinite;
+
+}
+
+@media screen and (min-width: 1200px) {
+    .info1 {
+        animation: info 20s linear infinite;
+    }
 }
 
 @keyframes info {
@@ -302,16 +366,6 @@ header {
     }
 }
 
-@keyframes info2 {
-    0% {
-        transform: translate(0%);
-    }
-
-    100% {
-        transform: translate(-200%);
-    }
-}
-
 @media screen and (min-width: 1200px) {
 
     .info a:hover i,
@@ -319,6 +373,7 @@ header {
         color: #E8A7BF;
     }
 }
+
 .info i {
     display: block;
     color: #502D0A;
@@ -416,6 +471,7 @@ header {
         background-color: #ccc;
     }
 }
+
 .comb-img2 {
     position: relative;
     border: 8px solid #E8A7BF;
@@ -484,11 +540,14 @@ header {
 
 .big-picture img {
     width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 .photo-text {
     margin: 50px;
-    flex-basis: 536px;
+    width: 536px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -592,6 +651,7 @@ header {
         color: #502D0A;
     }
 }
+
 /* -------------------news-------------------- */
 .news {
     background-color: #FFFDFD;
@@ -647,6 +707,7 @@ header {
         border-bottom: 1px solid #43AAC1;
     }
 }
+
 /* -------------------shop-------------------- */
 .shop {
     display: flex;
@@ -984,7 +1045,7 @@ header {
     .photo {
         width: 90vw;
         flex-direction: column;
-        height: auto;
+        height: 608px;
         align-items: center;
 
     }
@@ -992,15 +1053,14 @@ header {
     .big-picture {
         width: 100%;
         margin-left: 0;
-        height: auto;
+        height: 50%;
     }
 
     .big-picture img {
-        width: 90%;
         padding-top: 20px;
         height: 100%;
         display: block;
-        object-fit: cover;
+        object-fit: contain;
         margin: 0 auto;
     }
 
@@ -1020,7 +1080,8 @@ header {
     .photo-text {
         width: 90%;
         margin: 0;
-        flex-basis: 0;
+        min-height: 330px;
+        display: block;
     }
 
     .photo-text p {

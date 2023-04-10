@@ -94,21 +94,24 @@ section{
 .pic1{
     position: absolute;
     right: 60px;
-    bottom: 200px;
+    bottom: 320px;
 }
 
 .pic2{
     position: absolute;
     right: 350px;
-    bottom: 50px;
+    bottom: 140px;
 }
 
 .pic3{
     position: absolute;
     right: 750px;
-    bottom: 150px;
+    bottom: 230px;
 }
 
+.phone{
+    display: none;
+}
 /* --------------------428-------------------------- */
 
 @media screen and (max-width: 428px){
@@ -173,6 +176,7 @@ section{
         display: flex;
         flex-shrink: 0;
         overflow: hidden;
+        
     }
 
     .pic1, .pic2, .pic3{
@@ -181,6 +185,20 @@ section{
         right: 0;
         bottom: 0;
         margin-right: 10px;
+        /* transform: translateX(0px); */
+        animation: pic 5s infinite linear;
+    }
+    .phone{
+        display: block;
+    }
+
+    @keyframes pic {
+        0%{
+            transform: translateX(0px);
+        }
+        100%{
+            transform: translateX(-675px);
+        }
     }
 
 }

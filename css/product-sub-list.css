@@ -237,6 +237,8 @@ section a {}
 
 .picture-list img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 section h2 {
@@ -312,13 +314,13 @@ section h2+p {
     }
 
     .bg {
-        width: 70vw;
-        height: 50vw;
+        width: 225px;
+        height: 160px;
     }
 
     .picture-list {
-        width: 50vw;
-        height: 50vw;
+        width: 100%;
+        height: 100%;
     }
 
     .sub-title {

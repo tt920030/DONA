@@ -1,6 +1,5 @@
 $(function () {
     // console.log($(window).scrollTop());
-    $(window).sw
 
     // 判斷重整時在哪個位置,header是否變色
     (function () {
@@ -151,6 +150,61 @@ $(function () {
 
 
 
+});
 
+$(window).on("load", function () {
+    // 輪播
+    let slideIndex = 0;
+    // showSlides();
 
+    function showSlides() {
+
+        $(".mySlides").css({ display: "none" });
+        slideIndex++;
+
+        if (slideIndex > $(".mySlides").length) {
+            slideIndex = 1;
+        }
+
+        // if (n < 1) {
+        //     slideIndex = $(".mySlides").length;
+        // }
+
+        console.log(slideIndex);
+        $(".mySlides").eq(slideIndex - 1).css({ display: "block" });
+
+        $(".dot").removeClass("-active");
+        $(".dot").eq(slideIndex - 1).addClass("-active");
+
+        // setTimeout(showSlides, 6000);
+
+    }
+
+    function slides() {
+        let slides = setInterval(function () {
+            showSlides();
+        }, 4000);
+    }
+
+    slides();
+
+    function change(n) {
+        slideIndex = n;
+        clearInterval(slides);
+    }
+
+    $(".dot1").click(function () {
+        change(0);
+        slides();
+    });
+
+    $(".dot2").click(function () {
+        change(1);
+        slides();
+    });
+
+    $(".dot3").click(function () {
+        change(2);
+        slides();
+    });
 });
