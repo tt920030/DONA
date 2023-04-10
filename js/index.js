@@ -170,7 +170,7 @@ $(window).on("load", function () {
         //     slideIndex = $(".mySlides").length;
         // }
 
-        console.log(slideIndex);
+        // console.log(slideIndex);
         $(".mySlides").eq(slideIndex - 1).css({ display: "block" });
 
         $(".dot").removeClass("-active");
@@ -180,31 +180,36 @@ $(window).on("load", function () {
 
     }
 
-    function slides() {
-        let slides = setInterval(function () {
+    let slides;
+
+    function start() {
+        slides = setInterval(function () {
             showSlides();
         }, 4000);
     }
 
-    slides();
+    start();
 
     function change(n) {
-        slideIndex = n;
+        
         clearInterval(slides);
+        slideIndex = n;
+        start();
     }
 
     $(".dot1").click(function () {
+        
         change(0);
-        slides();
+
     });
 
     $(".dot2").click(function () {
         change(1);
-        slides();
+
     });
 
     $(".dot3").click(function () {
         change(2);
-        slides();
+
     });
 });
