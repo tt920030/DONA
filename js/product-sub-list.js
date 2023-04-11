@@ -4,7 +4,7 @@ $(function () {
     (function () {
         let no = $(".main").attr("data-no");
 
-        $.get("../json/product.json", function (data) {
+        $.get("https://tt920030.github.io/DONA/json/product.json", function (data) {
             $(data).each(function (index, item) {
                 if (item.no === no) {
                     $(".main").html("");

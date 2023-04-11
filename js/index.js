@@ -108,7 +108,7 @@ $(function () {
                     $(".photo-text h2").text(change_title);
 
 
-                    $.get("../json/product.json", function (data) {
+                    $.get("https://tt920030.github.io/DONA/json/product.json", function (data) {
 
                         $.each(data, function (index, item) {
                             if (change_title === item.name) {
@@ -133,7 +133,7 @@ $(function () {
                     $(".photo-text h2").text(change_title);
 
 
-                    $.get("../json/product.json", function (data) {
+                    $.get("https://tt920030.github.io/DONA/json/product.json", function (data) {
 
                         $.each(data, function (index, item) {
                             if (change_title === item.name) {
