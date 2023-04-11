@@ -57,6 +57,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: big .5s;
+}
+
+@keyframes big {
+    0%{
+        transform: scale(0%);
+    }
+    100%{
+        transform: scale(100%);
+    }
 }
 
 .open p{

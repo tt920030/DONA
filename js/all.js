@@ -87,4 +87,26 @@ $(function () {
             e.preventDefault();
         }
     });
+
+    // header上縮
+    let lastScrollY = 0;
+    
+
+    $(window).scroll(function(e){
+        let current = $(window).scrollTop();
+
+        if(current > lastScrollY ){
+            $("header").slideUp();
+            
+        }else{
+            $("header").slideDown();
+            
+            
+        }
+        
+        lastScrollY = current;
+    });
+
+    
+
 });

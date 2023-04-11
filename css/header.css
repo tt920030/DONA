@@ -35,6 +35,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* transition: all .5s; */
+}
+
+header.-slideup{
+    height: 0px;
+}
+
+header.-block{
+    display: none;
 }
 
 .pink {

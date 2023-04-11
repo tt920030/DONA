@@ -34,7 +34,7 @@ body {
 .middle h1 {
     font-size: 38px;
     font-weight: bold;
-    margin-bottom: 55px;
+    /* margin-bottom: 25px; */
 }
 
 .log-text {
@@ -43,8 +43,19 @@ body {
     align-items: left;
 }
 
+.log-text p{
+    display: none;
+    color: #FF4252;
+    margin-top: 5px;
+}
+
+.log-text p.-alert{
+    display: block;
+}
+
 label[for="log-in"] {
     margin-bottom: 15px;
+    margin-top: 35px;
 }
 
 .middle input {
@@ -84,10 +95,11 @@ label[for="log-in"] {
 }
 
 #log-in {
-    margin-bottom: 40px;
+    
 }
 
 label[for="password"] {
+    margin-top: 35px;
     margin-bottom: 15px;
 }
 
@@ -152,20 +164,26 @@ label[for="password"] {
         width: 75vw;
     }
 
+    .log-text p{
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
     .middle input {
         width: 100%;
     }
 
     #log-in {
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     #password {
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
 
     .another {
         margin-bottom: 40px;
+        margin-top: 5px;
     }
 
     .log-in input[type="submit"] {
