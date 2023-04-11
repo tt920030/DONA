@@ -88,6 +88,7 @@ body{
     background-size: cover;
     height: 600px;
     background-color: inherit;
+    background-attachment: fixed;
 }
 
 /* --------------section2--------------- */
@@ -128,6 +129,35 @@ body{
     position: absolute;
     right: -90px;
     top: 120px;
+    display: flex;
+    overflow: hidden;
+}
+
+.text1{
+    animation: words .6s;
+}
+.text2{
+    animation: words .8s;
+}
+.text3{
+    animation: words 1s;
+}
+.text4{
+    animation: words 1.2s;
+}
+.text5{
+    animation: words 1.4s;
+}
+
+@keyframes words {
+    0%{
+        opacity: 0;
+        transform: translate(0, -100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0%);
+    }
 }
 
 .section2-2-left p{

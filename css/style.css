@@ -232,6 +232,40 @@ span.-active {
     z-index: 2;
     width: 790px;
     text-align: right;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+
+}
+
+.text1{
+    animation: words .6s;
+}
+.text2{
+    animation: words .8s;
+}
+.text3{
+    animation: words 1s;
+}
+.text4{
+    animation: words 1.2s;
+}
+.text5{
+    animation: words 1.4s;
+}
+.text6{
+    animation: words 1.6s;
+}
+
+@keyframes words {
+    0%{
+        opacity: 0;
+        transform: translate(0, -100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0%);
+    }
 }
 
 .text {
@@ -283,46 +317,12 @@ span.-active {
 
 /* -------------------about us--------------------- */
 .about {
-    /* background-image: url(../img/banners/banner2.jpg); */
+    background-image: url(../img/banners/banner2.jpg);
     height: 900px;
-    /* background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    background-position: 0 -450px; */
-    position: relative;
-    overflow: hidden;
-}
-
-.about img{
-    width: 1920px;
-    height: 1500px;
-    /* object-fit: cover; */
-    object-position: 50% 50%;
-    transform: translate(0px, 750px);
-    transition: all .5s;
-}
-
-/* .about .block1{
-    width: 100%;
-    height: 5vw;
-    background-color: #FFFDFD;
-}
-
-.about .block2{
-    width: 100%;
-    height: 5vw;
-    background-color: #FFFDFD;
-} */
-
-.about > div.wrapper{
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    text-align: center;
-    
+    background-attachment: fixed;
 }
 
 .about h1 {
@@ -972,6 +972,7 @@ span.-active {
         width: 90vw;
         margin-bottom: 30px;
         text-align: left;
+        justify-content: start;
     }
 
     .text {

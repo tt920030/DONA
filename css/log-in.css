@@ -104,13 +104,14 @@ label[for="password"] {
 }
 
 #password {
-    margin-bottom: 15px;
+   
 }
 
 .another {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+    margin-top: 5px;
 }
 
 .another h2 {

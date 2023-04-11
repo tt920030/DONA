@@ -31,7 +31,7 @@ $(function () {
 
 
     // 加入購物車
-    $(".detail button").click(function () {
+    $(".main").on("click", ".detail button",function () {
         let name = $(".detail h1").text();
         let number = $(".num").text();
 
@@ -82,19 +82,20 @@ $(function () {
                         let price = item.price;
                         let picture = item.picture;
                         let number = carts[i].number;
+                        let no = item.no;
 
 
                         $(".cart tbody").append(`
                             <tr>
                                 <td class="product">
                                     <div class="product-photo">
-                                        <a href="product-sub-list.html">
+                                        <a href="product-sub-list${no}.html">
                                         <img src="${picture}" alt="">
                                         </a>
                                     </div>
                                     
                                     <div class="product-name">
-                                        <a href="product-sub-list.html">
+                                        <a href="product-sub-list${no}.html">
                                             <h2>${name}</h2>
                                         </a>
                                         <a href="#" class="delete">

@@ -165,10 +165,6 @@ $(window).on("load", function () {
             slideIndex = 1;
         }
 
-        // if (n < 1) {
-        //     slideIndex = $(".mySlides").length;
-        // }
-
         // console.log(slideIndex);
         $(".mySlides").eq(slideIndex - 1).css({ display: "block" });
 
@@ -219,95 +215,86 @@ $(window).on("load", function () {
         // console.log((open ));
         // console.log(open - current);
         // console.log();
-
-        if (open - current < $(this).innerHeight()) {
+        console.log(open - current);
+        if (open - current < $(this).innerHeight() - 100) {
             $(".open").addClass("-big");
         } else {
             $(".open").removeClass("-big");
         }
     });
 
+    function title_anim(n) {
+        let current = $(window).scrollTop();
+        let title = $(`#title${n}`).offset().top;
+
+        
+
+        if ( title - current < $(window).innerHeight()) {
+
+            for (let i = 0; i < $(`#title${n} span`).length; i++) {
+                $(`#title${n} span`).eq(i).addClass(`text${i + 1}`)
+            }
+
+
+        } else {
+            for (let i = 0; i < $(`#title${n} span`).length; i++) {
+                $(`#title${n} span`).eq(i).removeClass(`text${i + 1}`)
+            }
+        }
+    }
+
+    // 鬆軟麵包
+    $(window).scroll(function () {
+        title_anim(1);
+        title_anim(2);
+        title_anim(3);
+    });
+
+
+
+
+
     // 視差滾動
+
+    // let lastScrollY = 0;
+    // // let x = -300;
 
     // $(window).scroll(function () {
     //     let current = $(window).scrollTop();
     //     let banner = $(".about").offset().top;
-
-
     //     // console.log(banner - current);
-    //     if ((banner - current) < 300) {
-    //         // x = x + 5;
-    //         // $(".about>img").css({transform: `translate(0px,${x}px)`});
-    //         // console.log(x);
-    //     } else {
-    //         // x--;
-    //         // $(".about>img").animate({transform: `translate(0px,${x}px)`});
-    //         // console.log(x);
-    //     }
+
+
+
+    //         // 滾輪往下
+    //         if (current > lastScrollY) {
+    //             // banner向上
+
+    //             // if(x < 0){
+
+    //             // }
+    //             let x = ($(window).innerHeight() - (banner - current)) - 900 + 100;
+    //             if(x < 0){
+    //                 $(".about>img").css({ transform: `translate(0px,${x}px)` });
+    //             }
+
+    //             // console.log(x);
+
+
+
+    //         } else {
+    //             // banner向下
+    //             let y = current - banner - 100;
+
+    //             console.log(y);
+    //             if(y > -600){
+    //                 $(".about>img").css({ transform: `translate(0px,${y}px)` });
+    //             }
+
+    //         }
+
+    //         lastScrollY = current;
+
+
     // });
-
-    // $("#point").click(function(){
-    //     console.log("aaa");
-    //     $(".about>img").css({transform:"translate(0px,100px)"});
-    // });
-
-    // 
-    // 
-
-    // $(window).scroll(function(e){
-    //     let current = $(window).scrollTop();
-
-    //     if(current > lastScrollY ){
-    //         $("header").slideUp();
-
-    //     }else{
-    //         $("header").slideDown();
-
-
-    //     }
-
-    //     lastScrollY = current;
-    // });
-
-    let lastScrollY = 0;
-    // let x = -300;
-
-    $(window).scroll(function () {
-        let current = $(window).scrollTop();
-        let banner = $(".about").offset().top;
-        // console.log(banner - current);
-        
-
-        
-            // 滾輪往下
-            if (current > lastScrollY) {
-                // banner向上
-
-                // if(x < 0){
-
-                // }
-                let x = ($(window).innerHeight() - (banner - current)) - 900 + 100;
-                if(x < 0){
-                    $(".about>img").css({ transform: `translate(0px,${x}px)` });
-                }
-
-                // console.log(x);
-                
-
-
-            } else {
-                // banner向下
-                let y = current - banner - 100;
-
-                console.log(y);
-                if(y > -600){
-                    $(".about>img").css({ transform: `translate(0px,${y}px)` });
-                }
-                
-            }
-
-            lastScrollY = current;
-
-        
-    });
 });

@@ -71,7 +71,13 @@
             <section class="section2-2">
                 
                 <div class="section2-2-left">
-                    <h2>夢想與熱情</h2>
+                    <h2>
+                        <span>夢</span>
+                        <span>想</span>
+                        <span>與</span>
+                        <span>熱</span>
+                        <span>情</span>
+                    </h2>
                     <p>Leilani 店長是夏威夷人，從小就喜歡吃甜甜圈，並且夢想有一天能夠開一家屬於自己的甜甜圈店。來到台灣後，他深深被這片土地的美景、文化和飲食吸引，決定在這裡實現自己的夢想。他將夏威夷風味融入甜甜圈裡，並且致力於提供最優質的甜點和服務，讓顧客能夠品嚐到不一樣的口感和風味。他相信，在台灣這樣美麗的土地上，他能夠開創出屬於自己的成功故事，也能夠讓更多的人感受到他的熱情和用心。</p>
                 </div>
                 <div class="section2-2-right">
@@ -182,5 +188,28 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="vendors/is.min.js"></script>
     <script src="js/all.js"></script>
+    <script>
+        // brandstory title
+
+
+    $(window).scroll(function () {
+        let current = $(window).scrollTop();
+        let h2 = $(".section2-2-left h2").offset().top;
+        // console.log(current);
+
+        if (h2 - current < $(window).innerHeight()) {
+
+            for (let i = 0; i < $(".section2-2-left span").length; i++) {
+                $(".section2-2-left span").eq(i).addClass(`text${i + 1}`);
+            }
+
+
+        } else {
+            for (let i = 0; i < $(".section2-2-left span").length; i++) {
+                $(".section2-2-left span").eq(i).removeClass(`text${i + 1}`);
+            }
+        }
+    });
+    </script>
 </body>
 </html>

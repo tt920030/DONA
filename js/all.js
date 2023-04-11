@@ -50,18 +50,18 @@ $(function () {
 
     // 購物車數字出現
     function cartNumber() {
-        
+
         let local = JSON.parse(localStorage.getItem("cart"));
 
-        
+
         if (local === null || local.length === 0) {
 
         } else {
-            
-            $(".right p").css({display: "flex"});
+
+            $(".right p").css({ display: "flex" });
 
             let num = 0;
-            $(local).each(function(index, item){
+            $(local).each(function (index, item) {
                 num = Number(num) + Number(item.number);
                 // console.log(num);
             });
@@ -72,14 +72,14 @@ $(function () {
     cartNumber();
 
     // 訂閱
-    $(".email input[type='submit']").click(function(e){
+    $(".email input[type='submit']").click(function (e) {
 
         let send_data = true;
 
-        if($("#subscribe").val() === "" || is.email($("#subscribe").val()) === false){
+        if ($("#subscribe").val() === "" || is.email($("#subscribe").val()) === false) {
             alert("email格式錯誤");
             send_data = false;
-        }else{
+        } else {
             alert("註冊成功!");
         }
 
@@ -90,23 +90,29 @@ $(function () {
 
     // header上縮
     let lastScrollY = 0;
-    
 
-    $(window).scroll(function(e){
+
+    $(window).scroll(function (e) {
         let current = $(window).scrollTop();
 
-        if(current > lastScrollY ){
-            $("header").slideUp();
-            
-        }else{
-            $("header").slideDown();
-            
-            
+        if ($(this).width() > 1200) {
+            if (current > lastScrollY) {
+                $("header").slideUp();
+
+            } else {
+                $("header").slideDown();
+
+
+            }
+
+            lastScrollY = current;
         }
-        
-        lastScrollY = current;
+
+
     });
 
     
+
+
 
 });

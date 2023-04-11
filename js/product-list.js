@@ -14,9 +14,9 @@ $(function () {
 
                 
                     $(".container ul").append(`
-                    <li>
-                        <a href="product-sub-list${item.number}.html">
-                            <div class="bg">
+                    <li data-no="${item.no}">
+                        <a href="product-sub-list${item.no}.html">
+                            <div class="bg" >
                                 <div class="picture">
                                     <img src="${item.picture}" alt="">
                                 </div>
@@ -47,7 +47,7 @@ $(function () {
                     if (index) {
                         $(".container ul").append(`
                         <li>
-                            <a href="product-sub-list${item.number}.html">
+                            <a href="product-sub-list${item.no}.html">
                                 <div class="bg">
                                     <div class="picture">
                                         <img src="${item.picture}" alt="">
@@ -72,7 +72,7 @@ $(function () {
                     if (item.type === type) {
                         $(".container ul").append(`
                         <li>
-                            <a href="product-sub-list${item.number}.html">
+                            <a href="product-sub-list${item.no}.html">
                                 <div class="bg">
                                     <div class="picture">
                                         <img src="${item.picture}" alt="">
