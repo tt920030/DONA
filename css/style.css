@@ -1028,6 +1028,7 @@ span.-active {
 
     .about {
         height: 570px;
+        background-image: url(../img/banners/banner2_small.jpg);
     }
 
     .about h1 {
