@@ -118,7 +118,7 @@ $(function () {
                     });
                 },
                 function () {
-                    $(".big-picture img").attr("src", "img/products/product7.png");
+                    $(".big-picture img").attr("src", "img/products/product8.png");
                     $(".photo-text h2").text("黑巧克甜甜圈");
                     $(".photo-text p").text("黑巧克甜甜圈是一款結合了香濃黑巧克力與鬆軟甜甜圈口感的美食。它外皮金黃鬆軟，內部則是豐富的黑巧克力香氣和口感，入口即化，令人回味無窮。黑巧克甜甜圈不僅適合當做早餐或下午茶點心，也是一款完美的甜點選擇。");
                 }
