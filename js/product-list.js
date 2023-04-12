@@ -46,7 +46,7 @@ $(function () {
 
                     if (index) {
                         $(".container ul").append(`
-                        <li>
+                        <li data-no="${item.no}">
                             <a href="product-sub-list${item.no}.html">
                                 <div class="bg">
                                     <div class="picture">
@@ -71,7 +71,7 @@ $(function () {
 
                     if (item.type === type) {
                         $(".container ul").append(`
-                        <li>
+                        <li data-no="${item.no}">
                             <a href="product-sub-list${item.no}.html">
                                 <div class="bg">
                                     <div class="picture">
