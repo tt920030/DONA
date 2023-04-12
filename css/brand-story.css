@@ -380,6 +380,7 @@ body{
     .banner2-2{
         height: 150px;
         background-image: url(../img/banners/banner2-2_small.jpg);
+        background-attachment: unset;
     }
 
     .section2-2{
