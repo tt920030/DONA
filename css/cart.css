@@ -184,6 +184,7 @@ tbody tr td {
     font-size: 20px;
     color: #43AAC1;
     border-radius: 5px;
+    font-family:  'Noto Sans TC', sans-serif;
 }
 
 @media screen and (min-width: 1200px) {

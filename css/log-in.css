@@ -135,6 +135,7 @@ label[for="password"] {
     border-radius: 0;
     border-radius: 5px;
     font-size: 16px;
+    font-family:  'Noto Sans TC', sans-serif;
 }
 
 @media screen and (min-width: 1200px) {
