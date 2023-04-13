@@ -70,7 +70,7 @@ $(function () {
 
     // 購物車加入商品列
     (function () {
-        $.get("https://tt920030.github.io/DONA/json/product.json", function (data) {
+        $.get("../../json/product.json", function (data) {
             $(data).each(function (index, item) {
 
 
@@ -131,7 +131,7 @@ $(function () {
 
 
     function sum() {
-        $.get("https://tt920030.github.io/DONA/json/product.json", function (data) {
+        $.get("../../json/product.json", function (data) {
             let total = 0;
 
             $(data).each(function (index, item) {

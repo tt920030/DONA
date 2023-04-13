@@ -3,7 +3,7 @@ $(function () {
     // 商店圖片在 428px 換成小圖
     (function () {
         if ($(window).width() < 428) {
-            $(".shop-img img").attr("src", "../img/shop/shop-small.jpg");
+            $(".shop-img img").attr("src", "../../img/shop/shop-small.jpg");
         }
     })();
 
