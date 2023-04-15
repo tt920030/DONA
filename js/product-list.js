@@ -9,7 +9,7 @@ $(function () {
 
     // 載入商品
     (function () {
-        $.get("../../json/product.json", function (data) {
+        $.get("https://tt920030.github.io/DONA/json/product.json", function (data) {
             $(data).each(function (index, item) {
 
                 
@@ -41,7 +41,7 @@ $(function () {
         $(".container ul").html("");
 
         if (type === "所有商品") {
-            $.get("../../json/product.json", function (data) {
+            $.get("https://tt920030.github.io/DONA/json/product.json", function (data) {
                 $(data).each(function (index, item) {
 
                     if (index) {
@@ -66,7 +66,7 @@ $(function () {
                 });
             });
         } else {
-            $.get("../../json/product.json", function (data) {
+            $.get("https://tt920030.github.io/DONA/json/product.json", function (data) {
                 $(data).each(function (index, item) {
 
                     if (item.type === type) {
