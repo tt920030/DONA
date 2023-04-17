@@ -214,11 +214,11 @@ tbody tr td {
     }
 
     .product {
-        justify-content: space-evenly;
+        justify-content: flex-start;
     }
 
     .product-photo {
-        margin-right: 10px;
+        margin-right: 15px;
         margin-left: 0;
     }
 
