@@ -537,7 +537,7 @@ span.-active {
 
 /* -------------------product-sub-------------------- */
 .product-sub {
-    height: 1710px;
+    height: 1300px;
     background-color: #43AAC1;
     overflow: hidden;
     background-image: url(../img/background/Donutworry_pink.png), url(../img/background/Donutworry_pink.png);
@@ -555,8 +555,8 @@ span.-active {
 
 .photo {
     margin: 0 auto;
-    width: 1100px;
-    height: 540px;
+    width: 980px;
+    height: 400px;
     background-color: #FFFDFD;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
     position: relative;
@@ -595,7 +595,7 @@ span.-active {
 
 .photo-text h2 {
     font-size: 64px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 
 .photo-text p {
@@ -607,7 +607,7 @@ span.-active {
 
 .product-sub ul {
     display: flex;
-    margin-top: 120px;
+    margin-top: 50px;
 }
 
 .product-sub li {
@@ -630,7 +630,7 @@ span.-active {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .product-text h3 {
