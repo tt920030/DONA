@@ -178,6 +178,7 @@ $(window).on("load", function () {
     let slides;
 
     function start() {
+        showSlides();
         slides = setInterval(function () {
             showSlides();
         }, 4000);
