@@ -147,6 +147,10 @@ body{
         position: relative;
     }
 
+    .shop-img img {
+      content: url(../img/shop/shop-small.jpg);
+    }
+
     .shop-text h1{
         padding-top: 20px;
         font-size: 30px;

@@ -11,22 +11,26 @@ $(function () {
     // 打開子選單
     let is_open = false;
 
-    $(".left > li > a:first").click(function (e) {
-        e.preventDefault();
+    
+      $(".left > li > a:first").click(function (e) {
+          e.preventDefault();
+          if ($( window ).width() < 1200){
+            if (is_open === false) {
+                $(".select").slideDown();
+                $(".left > li:first-child").addClass('-open');
+                $(".footer-right ol>.social").addClass('-open');
+                is_open = true;
+            } else {
+                $(".select").slideUp();
+                $(".left > li:first-child").removeClass('-open');
+                $(".footer-right ol>.social").removeClass('-open');
+                is_open = false;
+            }
+          }
+      });      
+   
 
-        if (is_open === false) {
-            $(".select").slideDown();
-            $(".left > li:first-child").addClass('-open');
-            $(".footer-right ol>.social").addClass('-open');
-            is_open = true;
-        } else {
-            $(".select").slideUp();
-            $(".left > li:first-child").removeClass('-open');
-            $(".footer-right ol>.social").removeClass('-open');
-            is_open = false;
-        }
 
-    });
 
 
     // 按漢堡條打開MENU

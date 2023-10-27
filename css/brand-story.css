@@ -258,6 +258,7 @@ body{
 
 .tape3{
     width: 80%;
+    max-width: 400px;
     position: absolute;
     right: 50%;
     top: 0;
@@ -325,13 +326,13 @@ body{
 @media screen and (max-width: 1200px){
     .banner2-1{
         margin-top: 52px;
-        background-size: 50vw;
+        background-size: 30vh;
         height: 30vh;
     }
 
     .banner2-1 h1{
         font-size: 30px;
-        margin-right: 25vw;
+        margin-right: 13vh;
     }
 
     .banner2-1 img{
@@ -420,7 +421,7 @@ body{
     .section2-2-right::before{
         left: 62vw;
         top: 98px;
-        font-size: 30px;
+        font-size: 8vw;
     }
 
     .section2-2-right img{
@@ -468,7 +469,7 @@ body{
         margin-top: 50px;
         margin-bottom: 50px;
         width: 90%;
-        height: 600px;
+        max-width: 650px;
     }
 
     .container h3{

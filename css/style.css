@@ -456,7 +456,6 @@ span.-active {
 
 .comb-right {
     margin-right: 50px;
-    width: 60%;
 }
 
 .comb-right h1 {
@@ -469,7 +468,7 @@ span.-active {
     margin-top: 25px;
     display: flex;
     align-items: center;
-    justify-content: center;
+
     padding-top: 20px;
     border-top: 1px solid #502D0A;
 }
@@ -500,7 +499,6 @@ span.-active {
 .line2 {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-top: 25px;
     padding-top: 20px;
     border-top: 1px solid #502D0A;
@@ -1081,6 +1079,7 @@ span.-active {
 
     .comb-right {
         margin-right: 0;
+        width: 60%;
     }
 
     .comb-right h1 {
@@ -1093,6 +1092,11 @@ span.-active {
         border: 0;
         width: 100px;
         height: 100px;
+    }
+
+    .line1,
+    .line2 {
+      justify-content: center;
     }
 
     .line1 h3,
