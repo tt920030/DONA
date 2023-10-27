@@ -1,11 +1,11 @@
 $(function () {
 
     // 商店圖片在 428px 換成小圖
-    (function () {
-        if ($(window).width() < 428) {
-            $(".shop-img img").attr("src", "https://tt920030.github.io/DONA/img/shop/shop-small.jpg");
-        }
-    })();
+    // (function () {
+    //     if ($(window).width() < 428) {
+    //         $(".shop-img img").attr("src", "https://tt920030.github.io/DONA/img/shop/shop-small.jpg");
+    //     }
+    // })();
 
 
     // 打開子選單

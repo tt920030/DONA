@@ -155,7 +155,7 @@ footer {
 
 /* --------------------428-------------------------- */
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 1200px) {
     footer {
         flex-direction: column;
         padding: 20px;

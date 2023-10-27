@@ -145,7 +145,7 @@ label[for="password"] {
     }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 1200px) {
     .block {
         padding-top: 80px;
         padding-bottom: 100px;

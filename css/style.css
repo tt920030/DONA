@@ -456,6 +456,7 @@ span.-active {
 
 .comb-right {
     margin-right: 50px;
+    width: 60%;
 }
 
 .comb-right h1 {
@@ -468,6 +469,7 @@ span.-active {
     margin-top: 25px;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-top: 20px;
     border-top: 1px solid #502D0A;
 }
@@ -498,6 +500,7 @@ span.-active {
 .line2 {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 25px;
     padding-top: 20px;
     border-top: 1px solid #502D0A;
@@ -855,7 +858,7 @@ span.-active {
 
 /* --------------------428px------------------------- */
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 1200px) {
     .index-pink .left {
         background-color: #E8A7BF;
         color: #502D0A;
@@ -1237,6 +1240,10 @@ span.-active {
         bottom: auto;
         left: 0;
         position: relative;
+    }
+
+    .shop-img img {
+      content: url(../img/shop/shop-small.jpg);
     }
 
     .shop-text h1 {

@@ -200,7 +200,7 @@ header.-block{
 
 /* --------------------428-------------------------- */
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 1200px) {
     header {
         padding: 0 20px;
         height: 52px;

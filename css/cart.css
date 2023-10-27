@@ -128,7 +128,7 @@ tbody tr td {
 }
 
 .number {
-    ;
+    
 }
 
 .number ul {
@@ -195,7 +195,7 @@ tbody tr td {
 
 /* --------------------428-------------------------- */
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 1200px) {
     .block {
         padding-top: 100px;
     }

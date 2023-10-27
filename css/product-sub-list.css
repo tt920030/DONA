@@ -257,7 +257,7 @@ section h2+p {
 
 /* --------------------428-------------------------- */
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 1200px) {
     .wrapper {
         width: 90vw;
     }

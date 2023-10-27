@@ -322,7 +322,7 @@ body{
 
 /* --------------------428-------------------------- */
 
-@media screen and (max-width: 428px){
+@media screen and (max-width: 1200px){
     .banner2-1{
         margin-top: 52px;
         background-size: 50vw;
