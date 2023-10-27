@@ -1,6 +1,7 @@
 $(function(){
-
+    
     $(".log-in input[type='submit']").click(function(e){
+        e.preventDefault();
         let send_data = true;
 
         if($("#log-in").val() === "" || is.email($("#log-in").val()) === false){
@@ -21,8 +22,9 @@ $(function(){
             $("#password").next().addClass("-alert");
         }
 
-        if (!send_data) {
-            e.preventDefault();
+        if (send_data) {
+            alert("登入成功");
+            $(location).attr("href","index.html");
         }
     });
 });

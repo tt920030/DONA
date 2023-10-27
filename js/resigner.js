@@ -17,7 +17,7 @@ $(function () {
         }
 
         if (sent_CAPTCHA) {
-            alert("已傳送驗證碼");
+            alert("驗證碼1234");
         }
     });
     
@@ -31,7 +31,8 @@ $(function () {
             $("#CAPTCHA").addClass("-error");
             $("#CAPTCHA").parent().next().addClass("-alert");
             correct = false;
-        } else {
+            alert("驗證碼錯誤");
+        } else if ($("#CAPTCHA").val() === "1234"){
             $("#CAPTCHA").removeClass("-error");
             $("#CAPTCHA").parent().next().removeClass("-alert");
         }
@@ -42,6 +43,7 @@ $(function () {
     });
 
     $(".resigner input[type='submit']").click(function (e) {
+        e.preventDefault();
         let send_data = true;
 
         // 姓名不可空白
@@ -96,7 +98,7 @@ $(function () {
         if (ok) {
             $("#password").removeClass("-error");
             $("#password").next().removeClass("-alert");
-        } else if ((ok === false && $("#password").val().length < 6) || $("#password").val() === "") {
+        } else if ((ok === false && $("#password").val().length < 8) || $("#password").val() === "") {
             $("#password").addClass("-error");
             $("#password").next().addClass("-alert");
             send_data = false;
@@ -118,10 +120,9 @@ $(function () {
             $("#password-comfirm").next().removeClass("-alert");
         }
 
-        if (!send_data) {
-            e.preventDefault();
-        } else {
-            alert("註冊成功!");
+        if (send_data) {
+          alert("註冊成功!");
+          $(location).attr("href","index.html");
         }
     });
 
