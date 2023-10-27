@@ -214,6 +214,7 @@ ul li .-on {
 
     .picture {
         width: calc((90vw / 2) - 10px);
+        height: auto;
     }
 
     .container li:nth-child(6) {
@@ -228,6 +229,7 @@ ul li .-on {
 
     .container li:nth-child(6) .picture {
         width: calc((90vw) - 10px);
+        height: auto;
     }
 
     .container li:nth-child(10) {
@@ -242,6 +244,7 @@ ul li .-on {
 
     .container li:nth-child(10) .picture {
         width: calc((90vw) - 10px);
+        height: auto;
     }
 
     .next-page {

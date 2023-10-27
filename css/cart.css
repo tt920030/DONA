@@ -159,6 +159,7 @@ tbody tr td {
     justify-content: flex-end;
     border-top: 1px solid #FFFDFD;
     padding-top: 20px;
+    
 }
 
 .total h3 {
@@ -207,6 +208,8 @@ tbody tr td {
 
     table {
         width: calc(100vw - 40px);
+        max-width: 600px;
+        margin: 0 auto;
     }
 
     tbody tr td {
@@ -250,6 +253,12 @@ tbody tr td {
         font-size: 12px;
     }
 
+    .total {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 600px;
+    }
+
     .price {
         padding: 0 10px;
         flex-grow: 1;
@@ -263,7 +272,7 @@ tbody tr td {
         width: 75vw;
         align-self: center;
         font-size: 16px;
-
+        max-width: 600px;
     }
 
 
