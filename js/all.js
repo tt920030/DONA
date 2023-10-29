@@ -1,13 +1,4 @@
 $(function () {
-
-    // 商店圖片在 428px 換成小圖
-    // (function () {
-    //     if ($(window).width() < 428) {
-    //         $(".shop-img img").attr("src", "https://tt920030.github.io/DONA/img/shop/shop-small.jpg");
-    //     }
-    // })();
-
-
     // 打開子選單
     let is_open = false;
 
@@ -112,10 +103,38 @@ $(function () {
             lastScrollY = current;
         }
 
-
     });
 
-    
+    $(window).resize(function () {
+      if ($(this).width() <= 1200) {
+        $("header").slideDown();
+        
+
+      }else{
+        $(".right li:first").removeClass("js-open");
+        $("nav").removeClass("js-open");
+        $(".footer-right ol > .social").removeClass("js-open");
+        $(".js-bg").css({ display: "none" });
+        $(".menu-bg").removeClass("js-open");
+
+        let top = $(this).scrollTop();
+        let target = $(".bg-words").offset().top;
+        let open = $(".right li:first").hasClass("js-open");
+        // console.log(open);
+
+        // console.log(top - target);
+        if(!open){
+          if (top - target > 0) {
+              $("header").addClass("pink");
+              $("header").removeClass("-banner");
+
+          } else {
+              $("header").removeClass("pink");
+              $("header").addClass("-banner");
+          }
+        }
+      }
+    });
 
 
 

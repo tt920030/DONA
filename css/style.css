@@ -1155,7 +1155,7 @@ span.-active {
     .photo-text {
         width: 90%;
         margin: 0;
-        min-height: 330px;
+        min-height: 200px;
         display: block;
     }
 
@@ -1285,4 +1285,20 @@ span.-active {
     .shop-text iframe {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 800px) {
+  .photo-text {
+    min-height: 250px;
+  }
+
+  .comb-right {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .photo-text {
+    min-height: 330px;
+  }
 }

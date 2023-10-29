@@ -105,7 +105,7 @@ $(function () {
         let move = 0;
         $("#right").click(function () {
 
-            if ($(window).width() < 428) {
+            if ($(window).width() < 1200) {
                 move -= 240;
 
                 if (move < -960) {
@@ -127,7 +127,7 @@ $(function () {
         });
 
         $("#left").click(function () {
-            if ($(window).width() < 428) {
+            if ($(window).width() < 1200) {
                 move += 240;
                 if (move > 0) {
                     move -= 240;
